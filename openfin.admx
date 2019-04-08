@@ -1,0 +1,3119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitions revision="1.0" schemaVersion="1.0">
+  <policyNamespaces>
+    <target prefix="openfin" namespace="OpenFin.1e0f6b8b-a5af-448b-8157-01a19fdcf40b" />
+    <using prefix="windows" namespace="Microsoft.Policies.Windows" />
+  </policyNamespaces>
+  <supersededAdm fileName="openfin.adm" />
+  <resources minRequiredRevision="1.0" />
+  <supportedOn>
+    <definitions>
+      <definition name="SUPPORTED_WINXPSP2" displayName="$(string.SUPPORTED_WINXPSP2)" />
+      <definition name="SUPPORTED_NotSpecified" displayName="$(string.ADMXMigrator_NoSupportedOn)" />
+    </definitions>
+  </supportedOn>
+  <categories>
+    <category name="openfin" displayName="$(string.openfin)" />
+    <category name="ChromeFrameContentTypes_Category" displayName="$(string.ChromeFrameContentTypes_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="RemoteAccess_Category" displayName="$(string.RemoteAccess_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="ContentSettings_Category" displayName="$(string.ContentSettings_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="ChromeFrameRendererSettings_Category" displayName="$(string.ChromeFrameRendererSettings_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="DefaultSearchProvider_Category" displayName="$(string.DefaultSearchProvider_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="Extensions_Category" displayName="$(string.Extensions_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="Homepage_Category" displayName="$(string.Homepage_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="LocallyManagedUsers_Category" displayName="$(string.LocallyManagedUsers_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="NativeMessaging_Category" displayName="$(string.NativeMessaging_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="PasswordManager_Category" displayName="$(string.PasswordManager_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="HTTPAuthentication_Category" displayName="$(string.HTTPAuthentication_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="Proxy_Category" displayName="$(string.Proxy_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+    <category name="RestoreOnStartupGroup_Category" displayName="$(string.RestoreOnStartupGroup_Category)">
+      <parentCategory ref="openfin" />
+    </category>
+  </categories>
+  <policies>
+    <policy name="AllowFileSelectionDialogs_Policy" class="Machine" displayName="$(string.AllowFileSelectionDialogs_Policy)" explainText="$(string.AllowFileSelectionDialogs_Explain)" presentation="$(presentation.AllowFileSelectionDialogs_Policy)" key="Software\Policies\OpenFin" valueName="AllowFileSelectionDialogs">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AllowOutdatedPlugins_Policy" class="Machine" displayName="$(string.AllowOutdatedPlugins_Policy)" explainText="$(string.AllowOutdatedPlugins_Explain)" presentation="$(presentation.AllowOutdatedPlugins_Policy)" key="Software\Policies\OpenFin" valueName="AllowOutdatedPlugins">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AlternateErrorPagesEnabled_Policy" class="Machine" displayName="$(string.AlternateErrorPagesEnabled_Policy)" explainText="$(string.AlternateErrorPagesEnabled_Explain)" presentation="$(presentation.AlternateErrorPagesEnabled_Policy)" key="Software\Policies\OpenFin" valueName="AlternateErrorPagesEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AlwaysAuthorizePlugins_Policy" class="Machine" displayName="$(string.AlwaysAuthorizePlugins_Policy)" explainText="$(string.AlwaysAuthorizePlugins_Explain)" presentation="$(presentation.AlwaysAuthorizePlugins_Policy)" key="Software\Policies\OpenFin" valueName="AlwaysAuthorizePlugins">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ApplicationLocaleValue_Policy" class="Machine" displayName="$(string.ApplicationLocaleValue_Policy)" explainText="$(string.ApplicationLocaleValue_Explain)" presentation="$(presentation.ApplicationLocaleValue_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="ApplicationLocaleValue_Part" valueName="ApplicationLocaleValue" />
+      </elements>
+    </policy>
+    <policy name="AudioCaptureAllowed_Policy" class="Machine" displayName="$(string.AudioCaptureAllowed_Policy)" explainText="$(string.AudioCaptureAllowed_Explain)" presentation="$(presentation.AudioCaptureAllowed_Policy)" key="Software\Policies\OpenFin" valueName="AudioCaptureAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AudioCaptureAllowedUrls_Policy" class="Machine" displayName="$(string.AudioCaptureAllowedUrls_Policy)" explainText="$(string.AudioCaptureAllowedUrls_Explain)" presentation="$(presentation.AudioCaptureAllowedUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="AudioCaptureAllowedUrls_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="AutoFillEnabled_Policy" class="Machine" displayName="$(string.AutoFillEnabled_Policy)" explainText="$(string.AutoFillEnabled_Explain)" presentation="$(presentation.AutoFillEnabled_Policy)" key="Software\Policies\OpenFin" valueName="AutoFillEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BackgroundModeEnabled_Policy" class="Machine" displayName="$(string.BackgroundModeEnabled_Policy)" explainText="$(string.BackgroundModeEnabled_Explain)" presentation="$(presentation.BackgroundModeEnabled_Policy)" key="Software\Policies\OpenFin" valueName="BackgroundModeEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BlockThirdPartyCookies_Policy" class="Machine" displayName="$(string.BlockThirdPartyCookies_Policy)" explainText="$(string.BlockThirdPartyCookies_Explain)" presentation="$(presentation.BlockThirdPartyCookies_Policy)" key="Software\Policies\OpenFin" valueName="BlockThirdPartyCookies">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BookmarkBarEnabled_Policy" class="Machine" displayName="$(string.BookmarkBarEnabled_Policy)" explainText="$(string.BookmarkBarEnabled_Explain)" presentation="$(presentation.BookmarkBarEnabled_Policy)" key="Software\Policies\OpenFin" valueName="BookmarkBarEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BrowserAddPersonEnabled_Policy" class="Machine" displayName="$(string.BrowserAddPersonEnabled_Policy)" explainText="$(string.BrowserAddPersonEnabled_Explain)" presentation="$(presentation.BrowserAddPersonEnabled_Policy)" key="Software\Policies\OpenFin" valueName="BrowserAddPersonEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BrowserGuestModeEnabled_Policy" class="Machine" displayName="$(string.BrowserGuestModeEnabled_Policy)" explainText="$(string.BrowserGuestModeEnabled_Explain)" presentation="$(presentation.BrowserGuestModeEnabled_Policy)" key="Software\Policies\OpenFin" valueName="BrowserGuestModeEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BuiltInDnsClientEnabled_Policy" class="Machine" displayName="$(string.BuiltInDnsClientEnabled_Policy)" explainText="$(string.BuiltInDnsClientEnabled_Explain)" presentation="$(presentation.BuiltInDnsClientEnabled_Policy)" key="Software\Policies\OpenFin" valueName="BuiltInDnsClientEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="CloudPrintProxyEnabled_Policy" class="Machine" displayName="$(string.CloudPrintProxyEnabled_Policy)" explainText="$(string.CloudPrintProxyEnabled_Explain)" presentation="$(presentation.CloudPrintProxyEnabled_Policy)" key="Software\Policies\OpenFin" valueName="CloudPrintProxyEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="CloudPrintSubmitEnabled_Policy" class="Machine" displayName="$(string.CloudPrintSubmitEnabled_Policy)" explainText="$(string.CloudPrintSubmitEnabled_Explain)" presentation="$(presentation.CloudPrintSubmitEnabled_Policy)" key="Software\Policies\OpenFin" valueName="CloudPrintSubmitEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DefaultBrowserSettingEnabled_Policy" class="Machine" displayName="$(string.DefaultBrowserSettingEnabled_Policy)" explainText="$(string.DefaultBrowserSettingEnabled_Explain)" presentation="$(presentation.DefaultBrowserSettingEnabled_Policy)" key="Software\Policies\OpenFin" valueName="DefaultBrowserSettingEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DeveloperToolsDisabled_Policy" class="Machine" displayName="$(string.DeveloperToolsDisabled_Policy)" explainText="$(string.DeveloperToolsDisabled_Explain)" presentation="$(presentation.DeveloperToolsDisabled_Policy)" key="Software\Policies\OpenFin" valueName="DeveloperToolsDisabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="Disable3DAPIs_Policy" class="Machine" displayName="$(string.Disable3DAPIs_Policy)" explainText="$(string.Disable3DAPIs_Explain)" presentation="$(presentation.Disable3DAPIs_Policy)" key="Software\Policies\OpenFin" valueName="Disable3DAPIs">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisablePluginFinder_Policy" class="Machine" displayName="$(string.DisablePluginFinder_Policy)" explainText="$(string.DisablePluginFinder_Explain)" presentation="$(presentation.DisablePluginFinder_Policy)" key="Software\Policies\OpenFin" valueName="DisablePluginFinder">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableSSLRecordSplitting_Policy" class="Machine" displayName="$(string.DisableSSLRecordSplitting_Policy)" explainText="$(string.DisableSSLRecordSplitting_Explain)" presentation="$(presentation.DisableSSLRecordSplitting_Policy)" key="Software\Policies\OpenFin" valueName="DisableSSLRecordSplitting">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableSafeBrowsingProceedAnyway_Policy" class="Machine" displayName="$(string.DisableSafeBrowsingProceedAnyway_Policy)" explainText="$(string.DisableSafeBrowsingProceedAnyway_Explain)" presentation="$(presentation.DisableSafeBrowsingProceedAnyway_Policy)" key="Software\Policies\OpenFin" valueName="DisableSafeBrowsingProceedAnyway">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableScreenshots_Policy" class="Machine" displayName="$(string.DisableScreenshots_Policy)" explainText="$(string.DisableScreenshots_Explain)" presentation="$(presentation.DisableScreenshots_Policy)" key="Software\Policies\OpenFin" valueName="DisableScreenshots">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableSpdy_Policy" class="Machine" displayName="$(string.DisableSpdy_Policy)" explainText="$(string.DisableSpdy_Explain)" presentation="$(presentation.DisableSpdy_Policy)" key="Software\Policies\OpenFin" valueName="DisableSpdy">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisabledPlugins_Policy" class="Machine" displayName="$(string.DisabledPlugins_Policy)" explainText="$(string.DisabledPlugins_Explain)" presentation="$(presentation.DisabledPlugins_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="DisabledPlugins_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="DisabledPluginsExceptions_Policy" class="Machine" displayName="$(string.DisabledPluginsExceptions_Policy)" explainText="$(string.DisabledPluginsExceptions_Explain)" presentation="$(presentation.DisabledPluginsExceptions_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="DisabledPluginsExceptions_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="DiskCacheDir_Policy" class="Machine" displayName="$(string.DiskCacheDir_Policy)" explainText="$(string.DiskCacheDir_Explain)" presentation="$(presentation.DiskCacheDir_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DiskCacheDir_Part" valueName="DiskCacheDir" />
+      </elements>
+    </policy>
+    <policy name="DiskCacheSize_Policy" class="Machine" displayName="$(string.DiskCacheSize_Policy)" explainText="$(string.DiskCacheSize_Explain)" presentation="$(presentation.DiskCacheSize_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <decimal id="DiskCacheSize_Part" valueName="DiskCacheSize" minValue="0" maxValue="2000000000" />
+      </elements>
+    </policy>
+    <policy name="DnsPrefetchingEnabled_Policy" class="Machine" displayName="$(string.DnsPrefetchingEnabled_Policy)" explainText="$(string.DnsPrefetchingEnabled_Explain)" presentation="$(presentation.DnsPrefetchingEnabled_Policy)" key="Software\Policies\OpenFin" valueName="DnsPrefetchingEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DownloadDirectory_Policy" class="Machine" displayName="$(string.DownloadDirectory_Policy)" explainText="$(string.DownloadDirectory_Explain)" presentation="$(presentation.DownloadDirectory_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DownloadDirectory_Part" valueName="DownloadDirectory" />
+      </elements>
+    </policy>
+    <policy name="EditBookmarksEnabled_Policy" class="Machine" displayName="$(string.EditBookmarksEnabled_Policy)" explainText="$(string.EditBookmarksEnabled_Explain)" presentation="$(presentation.EditBookmarksEnabled_Policy)" key="Software\Policies\OpenFin" valueName="EditBookmarksEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="EnableDeprecatedWebPlatformFeatures_Policy" class="Machine" displayName="$(string.EnableDeprecatedWebPlatformFeatures_Policy)" explainText="$(string.EnableDeprecatedWebPlatformFeatures_Explain)" presentation="$(presentation.EnableDeprecatedWebPlatformFeatures_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="EnableDeprecatedWebPlatformFeatures_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="EnableOnlineRevocationChecks_Policy" class="Machine" displayName="$(string.EnableOnlineRevocationChecks_Policy)" explainText="$(string.EnableOnlineRevocationChecks_Explain)" presentation="$(presentation.EnableOnlineRevocationChecks_Policy)" key="Software\Policies\OpenFin" valueName="EnableOnlineRevocationChecks">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="EnabledPlugins_Policy" class="Machine" displayName="$(string.EnabledPlugins_Policy)" explainText="$(string.EnabledPlugins_Explain)" presentation="$(presentation.EnabledPlugins_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="EnabledPlugins_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ForceEphemeralProfiles_Policy" class="Machine" displayName="$(string.ForceEphemeralProfiles_Policy)" explainText="$(string.ForceEphemeralProfiles_Explain)" presentation="$(presentation.ForceEphemeralProfiles_Policy)" key="Software\Policies\OpenFin" valueName="ForceEphemeralProfiles">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ForceGoogleSafeSearch_Policy" class="Machine" displayName="$(string.ForceGoogleSafeSearch_Policy)" explainText="$(string.ForceGoogleSafeSearch_Explain)" presentation="$(presentation.ForceGoogleSafeSearch_Policy)" key="Software\Policies\OpenFin" valueName="ForceGoogleSafeSearch">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ForceYouTubeSafetyMode_Policy" class="Machine" displayName="$(string.ForceYouTubeSafetyMode_Policy)" explainText="$(string.ForceYouTubeSafetyMode_Explain)" presentation="$(presentation.ForceYouTubeSafetyMode_Policy)" key="Software\Policies\OpenFin" valueName="ForceYouTubeSafetyMode">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="FullscreenAllowed_Policy" class="Machine" displayName="$(string.FullscreenAllowed_Policy)" explainText="$(string.FullscreenAllowed_Explain)" presentation="$(presentation.FullscreenAllowed_Policy)" key="Software\Policies\OpenFin" valueName="FullscreenAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="GCFUserDataDir_Policy" class="Machine" displayName="$(string.GCFUserDataDir_Policy)" explainText="$(string.GCFUserDataDir_Explain)" presentation="$(presentation.GCFUserDataDir_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="GCFUserDataDir_Part" valueName="GCFUserDataDir" />
+      </elements>
+    </policy>
+    <policy name="HideWebStoreIcon_Policy" class="Machine" displayName="$(string.HideWebStoreIcon_Policy)" explainText="$(string.HideWebStoreIcon_Explain)" presentation="$(presentation.HideWebStoreIcon_Policy)" key="Software\Policies\OpenFin" valueName="HideWebStoreIcon">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportAutofillFormData_Policy" class="Machine" displayName="$(string.ImportAutofillFormData_Policy)" explainText="$(string.ImportAutofillFormData_Explain)" presentation="$(presentation.ImportAutofillFormData_Policy)" key="Software\Policies\OpenFin" valueName="ImportAutofillFormData">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportBookmarks_Policy" class="Machine" displayName="$(string.ImportBookmarks_Policy)" explainText="$(string.ImportBookmarks_Explain)" presentation="$(presentation.ImportBookmarks_Policy)" key="Software\Policies\OpenFin" valueName="ImportBookmarks">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportHistory_Policy" class="Machine" displayName="$(string.ImportHistory_Policy)" explainText="$(string.ImportHistory_Explain)" presentation="$(presentation.ImportHistory_Policy)" key="Software\Policies\OpenFin" valueName="ImportHistory">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportHomepage_Policy" class="Machine" displayName="$(string.ImportHomepage_Policy)" explainText="$(string.ImportHomepage_Explain)" presentation="$(presentation.ImportHomepage_Policy)" key="Software\Policies\OpenFin" valueName="ImportHomepage">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportSavedPasswords_Policy" class="Machine" displayName="$(string.ImportSavedPasswords_Policy)" explainText="$(string.ImportSavedPasswords_Explain)" presentation="$(presentation.ImportSavedPasswords_Policy)" key="Software\Policies\OpenFin" valueName="ImportSavedPasswords">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportSearchEngine_Policy" class="Machine" displayName="$(string.ImportSearchEngine_Policy)" explainText="$(string.ImportSearchEngine_Explain)" presentation="$(presentation.ImportSearchEngine_Policy)" key="Software\Policies\OpenFin" valueName="ImportSearchEngine">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="IncognitoModeAvailability_Policy" class="Machine" displayName="$(string.IncognitoModeAvailability_Policy)" explainText="$(string.IncognitoModeAvailability_Explain)" presentation="$(presentation.IncognitoModeAvailability_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="IncognitoModeAvailability_Part" valueName="IncognitoModeAvailability">
+          <item displayName="$(string.Enabled_DropDown)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.Disabled_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.Forced_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="ManagedBookmarks_Policy" class="Machine" displayName="$(string.ManagedBookmarks_Policy)" explainText="$(string.ManagedBookmarks_Explain)" presentation="$(presentation.ManagedBookmarks_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="ManagedBookmarks_Part" valueName="ManagedBookmarks" />
+      </elements>
+    </policy>
+    <policy name="MaxConnectionsPerProxy_Policy" class="Machine" displayName="$(string.MaxConnectionsPerProxy_Policy)" explainText="$(string.MaxConnectionsPerProxy_Explain)" presentation="$(presentation.MaxConnectionsPerProxy_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <decimal id="MaxConnectionsPerProxy_Part" valueName="MaxConnectionsPerProxy" minValue="0" maxValue="2000000000" />
+      </elements>
+    </policy>
+    <policy name="MaxInvalidationFetchDelay_Policy" class="Machine" displayName="$(string.MaxInvalidationFetchDelay_Policy)" explainText="$(string.MaxInvalidationFetchDelay_Explain)" presentation="$(presentation.MaxInvalidationFetchDelay_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <decimal id="MaxInvalidationFetchDelay_Part" valueName="MaxInvalidationFetchDelay" minValue="0" maxValue="2000000000" />
+      </elements>
+    </policy>
+    <policy name="MediaCacheSize_Policy" class="Machine" displayName="$(string.MediaCacheSize_Policy)" explainText="$(string.MediaCacheSize_Explain)" presentation="$(presentation.MediaCacheSize_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <decimal id="MediaCacheSize_Part" valueName="MediaCacheSize" minValue="0" maxValue="2000000000" />
+      </elements>
+    </policy>
+    <policy name="MetricsReportingEnabled_Policy" class="Machine" displayName="$(string.MetricsReportingEnabled_Policy)" explainText="$(string.MetricsReportingEnabled_Explain)" presentation="$(presentation.MetricsReportingEnabled_Policy)" key="Software\Policies\OpenFin" valueName="MetricsReportingEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="NetworkPredictionOptions_Policy" class="Machine" displayName="$(string.NetworkPredictionOptions_Policy)" explainText="$(string.NetworkPredictionOptions_Explain)" presentation="$(presentation.NetworkPredictionOptions_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="NetworkPredictionOptions_Part" valueName="NetworkPredictionOptions">
+          <item displayName="$(string.NetworkPredictionAlways_DropDown)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.NetworkPredictionWifiOnly_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.NetworkPredictionNever_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="PrintingEnabled_Policy" class="Machine" displayName="$(string.PrintingEnabled_Policy)" explainText="$(string.PrintingEnabled_Explain)" presentation="$(presentation.PrintingEnabled_Policy)" key="Software\Policies\OpenFin" valueName="PrintingEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="QuicAllowed_Policy" class="Machine" displayName="$(string.QuicAllowed_Policy)" explainText="$(string.QuicAllowed_Explain)" presentation="$(presentation.QuicAllowed_Policy)" key="Software\Policies\OpenFin" valueName="QuicAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RequireOnlineRevocationChecksForLocalAnchors_Policy" class="Machine" displayName="$(string.RequireOnlineRevocationChecksForLocalAnchors_Policy)" explainText="$(string.RequireOnlineRevocationChecksForLocalAnchors_Explain)" presentation="$(presentation.RequireOnlineRevocationChecksForLocalAnchors_Policy)" key="Software\Policies\OpenFin" valueName="RequireOnlineRevocationChecksForLocalAnchors">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RestrictSigninToPattern_Policy" class="Machine" displayName="$(string.RestrictSigninToPattern_Policy)" explainText="$(string.RestrictSigninToPattern_Explain)" presentation="$(presentation.RestrictSigninToPattern_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RestrictSigninToPattern_Part" valueName="RestrictSigninToPattern" />
+      </elements>
+    </policy>
+    <policy name="SSLErrorOverrideAllowed_Policy" class="Machine" displayName="$(string.SSLErrorOverrideAllowed_Policy)" explainText="$(string.SSLErrorOverrideAllowed_Explain)" presentation="$(presentation.SSLErrorOverrideAllowed_Policy)" key="Software\Policies\OpenFin" valueName="SSLErrorOverrideAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SSLVersionFallbackMin_Policy" class="Machine" displayName="$(string.SSLVersionFallbackMin_Policy)" explainText="$(string.SSLVersionFallbackMin_Explain)" presentation="$(presentation.SSLVersionFallbackMin_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="SSLVersionFallbackMin_Part" valueName="SSLVersionFallbackMin">
+          <item displayName="$(string.SSLv3_DropDown)">
+            <value>
+              <string>ssl3</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_DropDown)">
+            <value>
+              <string>tls1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_1_DropDown)">
+            <value>
+              <string>tls1.1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_2_DropDown)">
+            <value>
+              <string>tls1.2</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="SSLVersionMin_Policy" class="Machine" displayName="$(string.SSLVersionMin_Policy)" explainText="$(string.SSLVersionMin_Explain)" presentation="$(presentation.SSLVersionMin_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="SSLVersionMin_Part" valueName="SSLVersionMin">
+          <item displayName="$(string.SSLv3_DropDown)">
+            <value>
+              <string>ssl3</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_DropDown)">
+            <value>
+              <string>tls1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_1_DropDown)">
+            <value>
+              <string>tls1.1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_2_DropDown)">
+            <value>
+              <string>tls1.2</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="SafeBrowsingEnabled_Policy" class="Machine" displayName="$(string.SafeBrowsingEnabled_Policy)" explainText="$(string.SafeBrowsingEnabled_Explain)" presentation="$(presentation.SafeBrowsingEnabled_Policy)" key="Software\Policies\OpenFin" valueName="SafeBrowsingEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SafeBrowsingExtendedReportingOptInAllowed_Policy" class="Machine" displayName="$(string.SafeBrowsingExtendedReportingOptInAllowed_Policy)" explainText="$(string.SafeBrowsingExtendedReportingOptInAllowed_Explain)" presentation="$(presentation.SafeBrowsingExtendedReportingOptInAllowed_Policy)" key="Software\Policies\OpenFin" valueName="SafeBrowsingExtendedReportingOptInAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SavingBrowserHistoryDisabled_Policy" class="Machine" displayName="$(string.SavingBrowserHistoryDisabled_Policy)" explainText="$(string.SavingBrowserHistoryDisabled_Explain)" presentation="$(presentation.SavingBrowserHistoryDisabled_Policy)" key="Software\Policies\OpenFin" valueName="SavingBrowserHistoryDisabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SearchSuggestEnabled_Policy" class="Machine" displayName="$(string.SearchSuggestEnabled_Policy)" explainText="$(string.SearchSuggestEnabled_Explain)" presentation="$(presentation.SearchSuggestEnabled_Policy)" key="Software\Policies\OpenFin" valueName="SearchSuggestEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ShowAppsShortcutInBookmarkBar_Policy" class="Machine" displayName="$(string.ShowAppsShortcutInBookmarkBar_Policy)" explainText="$(string.ShowAppsShortcutInBookmarkBar_Explain)" presentation="$(presentation.ShowAppsShortcutInBookmarkBar_Policy)" key="Software\Policies\OpenFin" valueName="ShowAppsShortcutInBookmarkBar">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ShowHomeButton_Policy" class="Machine" displayName="$(string.ShowHomeButton_Policy)" explainText="$(string.ShowHomeButton_Explain)" presentation="$(presentation.ShowHomeButton_Policy)" key="Software\Policies\OpenFin" valueName="ShowHomeButton">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SpellCheckServiceEnabled_Policy" class="Machine" displayName="$(string.SpellCheckServiceEnabled_Policy)" explainText="$(string.SpellCheckServiceEnabled_Explain)" presentation="$(presentation.SpellCheckServiceEnabled_Policy)" key="Software\Policies\OpenFin" valueName="SpellCheckServiceEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SuppressChromeFrameTurndownPrompt_Policy" class="Machine" displayName="$(string.SuppressChromeFrameTurndownPrompt_Policy)" explainText="$(string.SuppressChromeFrameTurndownPrompt_Explain)" presentation="$(presentation.SuppressChromeFrameTurndownPrompt_Policy)" key="Software\Policies\OpenFin" valueName="SuppressChromeFrameTurndownPrompt">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SyncDisabled_Policy" class="Machine" displayName="$(string.SyncDisabled_Policy)" explainText="$(string.SyncDisabled_Explain)" presentation="$(presentation.SyncDisabled_Policy)" key="Software\Policies\OpenFin" valueName="SyncDisabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="TranslateEnabled_Policy" class="Machine" displayName="$(string.TranslateEnabled_Policy)" explainText="$(string.TranslateEnabled_Explain)" presentation="$(presentation.TranslateEnabled_Policy)" key="Software\Policies\OpenFin" valueName="TranslateEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="URLBlacklist_Policy" class="Machine" displayName="$(string.URLBlacklist_Policy)" explainText="$(string.URLBlacklist_Explain)" presentation="$(presentation.URLBlacklist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="URLBlacklist_Part" key="$(string.unknown_13)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="URLWhitelist_Policy" class="Machine" displayName="$(string.URLWhitelist_Policy)" explainText="$(string.URLWhitelist_Explain)" presentation="$(presentation.URLWhitelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="URLWhitelist_Part" key="$(string.unknown_13)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="UserDataDir_Policy" class="Machine" displayName="$(string.UserDataDir_Policy)" explainText="$(string.UserDataDir_Explain)" presentation="$(presentation.UserDataDir_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="UserDataDir_Part" valueName="UserDataDir" />
+      </elements>
+    </policy>
+    <policy name="VideoCaptureAllowed_Policy" class="Machine" displayName="$(string.VideoCaptureAllowed_Policy)" explainText="$(string.VideoCaptureAllowed_Explain)" presentation="$(presentation.VideoCaptureAllowed_Policy)" key="Software\Policies\OpenFin" valueName="VideoCaptureAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="VideoCaptureAllowedUrls_Policy" class="Machine" displayName="$(string.VideoCaptureAllowedUrls_Policy)" explainText="$(string.VideoCaptureAllowedUrls_Explain)" presentation="$(presentation.VideoCaptureAllowedUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="VideoCaptureAllowedUrls_Part" key="$(string.unknown_13)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="WPADQuickCheckEnabled_Policy" class="Machine" displayName="$(string.WPADQuickCheckEnabled_Policy)" explainText="$(string.WPADQuickCheckEnabled_Explain)" presentation="$(presentation.WPADQuickCheckEnabled_Policy)" key="Software\Policies\OpenFin" valueName="WPADQuickCheckEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="WelcomePageOnOSUpgradeEnabled_Policy" class="Machine" displayName="$(string.WelcomePageOnOSUpgradeEnabled_Policy)" explainText="$(string.WelcomePageOnOSUpgradeEnabled_Explain)" presentation="$(presentation.WelcomePageOnOSUpgradeEnabled_Policy)" key="Software\Policies\OpenFin" valueName="WelcomePageOnOSUpgradeEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ChromeFrameContentTypes_Policy" class="Machine" displayName="$(string.ChromeFrameContentTypes_Policy)" explainText="$(string.ChromeFrameContentTypes_Explain)" presentation="$(presentation.ChromeFrameContentTypes_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ChromeFrameContentTypes_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ChromeFrameContentTypes_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostFirewallTraversal_Policy" class="Machine" displayName="$(string.RemoteAccessHostFirewallTraversal_Policy)" explainText="$(string.RemoteAccessHostFirewallTraversal_Explain)" presentation="$(presentation.RemoteAccessHostFirewallTraversal_Policy)" key="Software\Policies\OpenFin" valueName="RemoteAccessHostFirewallTraversal">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RemoteAccessHostDomain_Policy" class="Machine" displayName="$(string.RemoteAccessHostDomain_Policy)" explainText="$(string.RemoteAccessHostDomain_Explain)" presentation="$(presentation.RemoteAccessHostDomain_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostDomain_Part" valueName="RemoteAccessHostDomain" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostTalkGadgetPrefix_Policy" class="Machine" displayName="$(string.RemoteAccessHostTalkGadgetPrefix_Policy)" explainText="$(string.RemoteAccessHostTalkGadgetPrefix_Explain)" presentation="$(presentation.RemoteAccessHostTalkGadgetPrefix_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostTalkGadgetPrefix_Part" valueName="RemoteAccessHostTalkGadgetPrefix" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostRequireCurtain_Policy" class="Machine" displayName="$(string.RemoteAccessHostRequireCurtain_Policy)" explainText="$(string.RemoteAccessHostRequireCurtain_Explain)" presentation="$(presentation.RemoteAccessHostRequireCurtain_Policy)" key="Software\Policies\OpenFin" valueName="RemoteAccessHostRequireCurtain">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RemoteAccessHostAllowClientPairing_Policy" class="Machine" displayName="$(string.RemoteAccessHostAllowClientPairing_Policy)" explainText="$(string.RemoteAccessHostAllowClientPairing_Explain)" presentation="$(presentation.RemoteAccessHostAllowClientPairing_Policy)" key="Software\Policies\OpenFin" valueName="RemoteAccessHostAllowClientPairing">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RemoteAccessHostAllowGnubbyAuth_Policy" class="Machine" displayName="$(string.RemoteAccessHostAllowGnubbyAuth_Policy)" explainText="$(string.RemoteAccessHostAllowGnubbyAuth_Explain)" presentation="$(presentation.RemoteAccessHostAllowGnubbyAuth_Policy)" key="Software\Policies\OpenFin" valueName="RemoteAccessHostAllowGnubbyAuth">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RemoteAccessHostAllowRelayedConnection_Policy" class="Machine" displayName="$(string.RemoteAccessHostAllowRelayedConnection_Policy)" explainText="$(string.RemoteAccessHostAllowRelayedConnection_Explain)" presentation="$(presentation.RemoteAccessHostAllowRelayedConnection_Policy)" key="Software\Policies\OpenFin" valueName="RemoteAccessHostAllowRelayedConnection">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RemoteAccessHostUdpPortRange_Policy" class="Machine" displayName="$(string.RemoteAccessHostUdpPortRange_Policy)" explainText="$(string.RemoteAccessHostUdpPortRange_Explain)" presentation="$(presentation.RemoteAccessHostUdpPortRange_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostUdpPortRange_Part" valueName="RemoteAccessHostUdpPortRange" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostTokenUrl_Policy" class="Machine" displayName="$(string.RemoteAccessHostTokenUrl_Policy)" explainText="$(string.RemoteAccessHostTokenUrl_Explain)" presentation="$(presentation.RemoteAccessHostTokenUrl_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostTokenUrl_Part" valueName="RemoteAccessHostTokenUrl" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostTokenValidationUrl_Policy" class="Machine" displayName="$(string.RemoteAccessHostTokenValidationUrl_Policy)" explainText="$(string.RemoteAccessHostTokenValidationUrl_Explain)" presentation="$(presentation.RemoteAccessHostTokenValidationUrl_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostTokenValidationUrl_Part" valueName="RemoteAccessHostTokenValidationUrl" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostTokenValidationCertificateIssuer_Policy" class="Machine" displayName="$(string.RemoteAccessHostTokenValidationCertificateIssuer_Policy)" explainText="$(string.RemoteAccessHostTokenValidationCertificateIssuer_Explain)" presentation="$(presentation.RemoteAccessHostTokenValidationCertificateIssuer_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostTokenValidationCertificateIssuer_Part" valueName="RemoteAccessHostTokenValidationCertificateIssuer" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostDebugOverridePolicies_Policy" class="Machine" displayName="$(string.RemoteAccessHostDebugOverridePolicies_Policy)" explainText="$(string.RemoteAccessHostDebugOverridePolicies_Explain)" presentation="$(presentation.RemoteAccessHostDebugOverridePolicies_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostDebugOverridePolicies_Part" valueName="RemoteAccessHostDebugOverridePolicies" />
+      </elements>
+    </policy>
+    <policy name="DefaultCookiesSetting_Policy" class="Machine" displayName="$(string.DefaultCookiesSetting_Policy)" explainText="$(string.DefaultCookiesSetting_Explain)" presentation="$(presentation.DefaultCookiesSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultCookiesSetting_Part" valueName="DefaultCookiesSetting">
+          <item displayName="$(string.AllowCookies_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockCookies_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.SessionOnly_DropDown)">
+            <value>
+              <decimal value="4" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultImagesSetting_Policy" class="Machine" displayName="$(string.DefaultImagesSetting_Policy)" explainText="$(string.DefaultImagesSetting_Explain)" presentation="$(presentation.DefaultImagesSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultImagesSetting_Part" valueName="DefaultImagesSetting">
+          <item displayName="$(string.AllowImages_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockImages_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultJavaScriptSetting_Policy" class="Machine" displayName="$(string.DefaultJavaScriptSetting_Policy)" explainText="$(string.DefaultJavaScriptSetting_Explain)" presentation="$(presentation.DefaultJavaScriptSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultJavaScriptSetting_Part" valueName="DefaultJavaScriptSetting">
+          <item displayName="$(string.AllowJavaScript_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockJavaScript_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultPluginsSetting_Policy" class="Machine" displayName="$(string.DefaultPluginsSetting_Policy)" explainText="$(string.DefaultPluginsSetting_Explain)" presentation="$(presentation.DefaultPluginsSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultPluginsSetting_Part" valueName="DefaultPluginsSetting">
+          <item displayName="$(string.AllowPlugins_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockPlugins_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.ClickToPlay_DropDown)">
+            <value>
+              <decimal value="3" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultPopupsSetting_Policy" class="Machine" displayName="$(string.DefaultPopupsSetting_Policy)" explainText="$(string.DefaultPopupsSetting_Explain)" presentation="$(presentation.DefaultPopupsSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultPopupsSetting_Part" valueName="DefaultPopupsSetting">
+          <item displayName="$(string.AllowPopups_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockPopups_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultNotificationsSetting_Policy" class="Machine" displayName="$(string.DefaultNotificationsSetting_Policy)" explainText="$(string.DefaultNotificationsSetting_Explain)" presentation="$(presentation.DefaultNotificationsSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultNotificationsSetting_Part" valueName="DefaultNotificationsSetting">
+          <item displayName="$(string.AllowNotifications_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockNotifications_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.AskNotifications_DropDown)">
+            <value>
+              <decimal value="3" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultGeolocationSetting_Policy" class="Machine" displayName="$(string.DefaultGeolocationSetting_Policy)" explainText="$(string.DefaultGeolocationSetting_Explain)" presentation="$(presentation.DefaultGeolocationSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultGeolocationSetting_Part" valueName="DefaultGeolocationSetting">
+          <item displayName="$(string.AllowGeolocation_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockGeolocation_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.AskGeolocation_DropDown)">
+            <value>
+              <decimal value="3" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="AutoSelectCertificateForUrls_Policy" class="Machine" displayName="$(string.AutoSelectCertificateForUrls_Policy)" explainText="$(string.AutoSelectCertificateForUrls_Explain)" presentation="$(presentation.AutoSelectCertificateForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="AutoSelectCertificateForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="CookiesAllowedForUrls_Policy" class="Machine" displayName="$(string.CookiesAllowedForUrls_Policy)" explainText="$(string.CookiesAllowedForUrls_Explain)" presentation="$(presentation.CookiesAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="CookiesAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="CookiesBlockedForUrls_Policy" class="Machine" displayName="$(string.CookiesBlockedForUrls_Policy)" explainText="$(string.CookiesBlockedForUrls_Explain)" presentation="$(presentation.CookiesBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="CookiesBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="CookiesSessionOnlyForUrls_Policy" class="Machine" displayName="$(string.CookiesSessionOnlyForUrls_Policy)" explainText="$(string.CookiesSessionOnlyForUrls_Explain)" presentation="$(presentation.CookiesSessionOnlyForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="CookiesSessionOnlyForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ImagesAllowedForUrls_Policy" class="Machine" displayName="$(string.ImagesAllowedForUrls_Policy)" explainText="$(string.ImagesAllowedForUrls_Explain)" presentation="$(presentation.ImagesAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ImagesAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ImagesBlockedForUrls_Policy" class="Machine" displayName="$(string.ImagesBlockedForUrls_Policy)" explainText="$(string.ImagesBlockedForUrls_Explain)" presentation="$(presentation.ImagesBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ImagesBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="JavaScriptAllowedForUrls_Policy" class="Machine" displayName="$(string.JavaScriptAllowedForUrls_Policy)" explainText="$(string.JavaScriptAllowedForUrls_Explain)" presentation="$(presentation.JavaScriptAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="JavaScriptAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="JavaScriptBlockedForUrls_Policy" class="Machine" displayName="$(string.JavaScriptBlockedForUrls_Policy)" explainText="$(string.JavaScriptBlockedForUrls_Explain)" presentation="$(presentation.JavaScriptBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="JavaScriptBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="PluginsAllowedForUrls_Policy" class="Machine" displayName="$(string.PluginsAllowedForUrls_Policy)" explainText="$(string.PluginsAllowedForUrls_Explain)" presentation="$(presentation.PluginsAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="PluginsAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="PluginsBlockedForUrls_Policy" class="Machine" displayName="$(string.PluginsBlockedForUrls_Policy)" explainText="$(string.PluginsBlockedForUrls_Explain)" presentation="$(presentation.PluginsBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="PluginsBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="PopupsAllowedForUrls_Policy" class="Machine" displayName="$(string.PopupsAllowedForUrls_Policy)" explainText="$(string.PopupsAllowedForUrls_Explain)" presentation="$(presentation.PopupsAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="PopupsAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="PopupsBlockedForUrls_Policy" class="Machine" displayName="$(string.PopupsBlockedForUrls_Policy)" explainText="$(string.PopupsBlockedForUrls_Explain)" presentation="$(presentation.PopupsBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="PopupsBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="NotificationsAllowedForUrls_Policy" class="Machine" displayName="$(string.NotificationsAllowedForUrls_Policy)" explainText="$(string.NotificationsAllowedForUrls_Explain)" presentation="$(presentation.NotificationsAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="NotificationsAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="NotificationsBlockedForUrls_Policy" class="Machine" displayName="$(string.NotificationsBlockedForUrls_Policy)" explainText="$(string.NotificationsBlockedForUrls_Explain)" presentation="$(presentation.NotificationsBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="NotificationsBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ChromeFrameRendererSettings_Policy" class="Machine" displayName="$(string.ChromeFrameRendererSettings_Policy)" explainText="$(string.ChromeFrameRendererSettings_Explain)" presentation="$(presentation.ChromeFrameRendererSettings_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ChromeFrameRendererSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="ChromeFrameRendererSettings_Part" valueName="ChromeFrameRendererSettings">
+          <item displayName="$(string.RenderInHost_DropDown)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.RenderInChromeFrame_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="RenderInChromeFrameList_Policy" class="Machine" displayName="$(string.RenderInChromeFrameList_Policy)" explainText="$(string.RenderInChromeFrameList_Explain)" presentation="$(presentation.RenderInChromeFrameList_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ChromeFrameRendererSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="RenderInChromeFrameList_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="RenderInHostList_Policy" class="Machine" displayName="$(string.RenderInHostList_Policy)" explainText="$(string.RenderInHostList_Explain)" presentation="$(presentation.RenderInHostList_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ChromeFrameRendererSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="RenderInHostList_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="AdditionalLaunchParameters_Policy" class="Machine" displayName="$(string.AdditionalLaunchParameters_Policy)" explainText="$(string.AdditionalLaunchParameters_Explain)" presentation="$(presentation.AdditionalLaunchParameters_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ChromeFrameRendererSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="AdditionalLaunchParameters_Part" valueName="AdditionalLaunchParameters" />
+      </elements>
+    </policy>
+    <policy name="SkipMetadataCheck_Policy" class="Machine" displayName="$(string.SkipMetadataCheck_Policy)" explainText="$(string.SkipMetadataCheck_Explain)" presentation="$(presentation.SkipMetadataCheck_Policy)" key="Software\Policies\OpenFin" valueName="SkipMetadataCheck">
+      <parentCategory ref="ChromeFrameRendererSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DefaultSearchProviderEnabled_Policy" class="Machine" displayName="$(string.DefaultSearchProviderEnabled_Policy)" explainText="$(string.DefaultSearchProviderEnabled_Explain)" presentation="$(presentation.DefaultSearchProviderEnabled_Policy)" key="Software\Policies\OpenFin" valueName="DefaultSearchProviderEnabled">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DefaultSearchProviderName_Policy" class="Machine" displayName="$(string.DefaultSearchProviderName_Policy)" explainText="$(string.DefaultSearchProviderName_Explain)" presentation="$(presentation.DefaultSearchProviderName_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderName_Part" valueName="DefaultSearchProviderName" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderKeyword_Policy" class="Machine" displayName="$(string.DefaultSearchProviderKeyword_Policy)" explainText="$(string.DefaultSearchProviderKeyword_Explain)" presentation="$(presentation.DefaultSearchProviderKeyword_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderKeyword_Part" valueName="DefaultSearchProviderKeyword" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderSearchURL_Policy" class="Machine" displayName="$(string.DefaultSearchProviderSearchURL_Policy)" explainText="$(string.DefaultSearchProviderSearchURL_Explain)" presentation="$(presentation.DefaultSearchProviderSearchURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderSearchURL_Part" valueName="DefaultSearchProviderSearchURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderSuggestURL_Policy" class="Machine" displayName="$(string.DefaultSearchProviderSuggestURL_Policy)" explainText="$(string.DefaultSearchProviderSuggestURL_Explain)" presentation="$(presentation.DefaultSearchProviderSuggestURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderSuggestURL_Part" valueName="DefaultSearchProviderSuggestURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderInstantURL_Policy" class="Machine" displayName="$(string.DefaultSearchProviderInstantURL_Policy)" explainText="$(string.DefaultSearchProviderInstantURL_Explain)" presentation="$(presentation.DefaultSearchProviderInstantURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderInstantURL_Part" valueName="DefaultSearchProviderInstantURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderIconURL_Policy" class="Machine" displayName="$(string.DefaultSearchProviderIconURL_Policy)" explainText="$(string.DefaultSearchProviderIconURL_Explain)" presentation="$(presentation.DefaultSearchProviderIconURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderIconURL_Part" valueName="DefaultSearchProviderIconURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderEncodings_Policy" class="Machine" displayName="$(string.DefaultSearchProviderEncodings_Policy)" explainText="$(string.DefaultSearchProviderEncodings_Explain)" presentation="$(presentation.DefaultSearchProviderEncodings_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="DefaultSearchProviderEncodings_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderAlternateURLs_Policy" class="Machine" displayName="$(string.DefaultSearchProviderAlternateURLs_Policy)" explainText="$(string.DefaultSearchProviderAlternateURLs_Explain)" presentation="$(presentation.DefaultSearchProviderAlternateURLs_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="DefaultSearchProviderAlternateURLs_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderSearchTermsReplacementKey_Policy" class="Machine" displayName="$(string.DefaultSearchProviderSearchTermsReplacementKey_Policy)" explainText="$(string.DefaultSearchProviderSearchTermsReplacementKey_Explain)" presentation="$(presentation.DefaultSearchProviderSearchTermsReplacementKey_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderSearchTermsReplacementKey_Part" valueName="DefaultSearchProviderSearchTermsReplacementKey" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderImageURL_Policy" class="Machine" displayName="$(string.DefaultSearchProviderImageURL_Policy)" explainText="$(string.DefaultSearchProviderImageURL_Explain)" presentation="$(presentation.DefaultSearchProviderImageURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderImageURL_Part" valueName="DefaultSearchProviderImageURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderNewTabURL_Policy" class="Machine" displayName="$(string.DefaultSearchProviderNewTabURL_Policy)" explainText="$(string.DefaultSearchProviderNewTabURL_Explain)" presentation="$(presentation.DefaultSearchProviderNewTabURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderNewTabURL_Part" valueName="DefaultSearchProviderNewTabURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderSearchURLPostParams_Policy" class="Machine" displayName="$(string.DefaultSearchProviderSearchURLPostParams_Policy)" explainText="$(string.DefaultSearchProviderSearchURLPostParams_Explain)" presentation="$(presentation.DefaultSearchProviderSearchURLPostParams_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderSearchURLPostParams_Part" valueName="DefaultSearchProviderSearchURLPostParams" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderSuggestURLPostParams_Policy" class="Machine" displayName="$(string.DefaultSearchProviderSuggestURLPostParams_Policy)" explainText="$(string.DefaultSearchProviderSuggestURLPostParams_Explain)" presentation="$(presentation.DefaultSearchProviderSuggestURLPostParams_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderSuggestURLPostParams_Part" valueName="DefaultSearchProviderSuggestURLPostParams" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderInstantURLPostParams_Policy" class="Machine" displayName="$(string.DefaultSearchProviderInstantURLPostParams_Policy)" explainText="$(string.DefaultSearchProviderInstantURLPostParams_Explain)" presentation="$(presentation.DefaultSearchProviderInstantURLPostParams_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderInstantURLPostParams_Part" valueName="DefaultSearchProviderInstantURLPostParams" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderImageURLPostParams_Policy" class="Machine" displayName="$(string.DefaultSearchProviderImageURLPostParams_Policy)" explainText="$(string.DefaultSearchProviderImageURLPostParams_Explain)" presentation="$(presentation.DefaultSearchProviderImageURLPostParams_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderImageURLPostParams_Part" valueName="DefaultSearchProviderImageURLPostParams" />
+      </elements>
+    </policy>
+    <policy name="ExtensionInstallBlacklist_Policy" class="Machine" displayName="$(string.ExtensionInstallBlacklist_Policy)" explainText="$(string.ExtensionInstallBlacklist_Explain)" presentation="$(presentation.ExtensionInstallBlacklist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Extensions_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ExtensionInstallBlacklist_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ExtensionInstallWhitelist_Policy" class="Machine" displayName="$(string.ExtensionInstallWhitelist_Policy)" explainText="$(string.ExtensionInstallWhitelist_Explain)" presentation="$(presentation.ExtensionInstallWhitelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Extensions_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ExtensionInstallWhitelist_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ExtensionInstallForcelist_Policy" class="Machine" displayName="$(string.ExtensionInstallForcelist_Policy)" explainText="$(string.ExtensionInstallForcelist_Explain)" presentation="$(presentation.ExtensionInstallForcelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Extensions_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ExtensionInstallForcelist_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ExtensionInstallSources_Policy" class="Machine" displayName="$(string.ExtensionInstallSources_Policy)" explainText="$(string.ExtensionInstallSources_Explain)" presentation="$(presentation.ExtensionInstallSources_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Extensions_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ExtensionInstallSources_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ExtensionAllowedTypes_Policy" class="Machine" displayName="$(string.ExtensionAllowedTypes_Policy)" explainText="$(string.ExtensionAllowedTypes_Explain)" presentation="$(presentation.ExtensionAllowedTypes_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Extensions_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ExtensionAllowedTypes_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="HomepageLocation_Policy" class="Machine" displayName="$(string.HomepageLocation_Policy)" explainText="$(string.HomepageLocation_Explain)" presentation="$(presentation.HomepageLocation_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Homepage_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="HomepageLocation_Part" valueName="HomepageLocation" />
+      </elements>
+    </policy>
+    <policy name="HomepageIsNewTabPage_Policy" class="Machine" displayName="$(string.HomepageIsNewTabPage_Policy)" explainText="$(string.HomepageIsNewTabPage_Explain)" presentation="$(presentation.HomepageIsNewTabPage_Policy)" key="Software\Policies\OpenFin" valueName="HomepageIsNewTabPage">
+      <parentCategory ref="Homepage_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SupervisedUserCreationEnabled_Policy" class="Machine" displayName="$(string.SupervisedUserCreationEnabled_Policy)" explainText="$(string.SupervisedUserCreationEnabled_Explain)" presentation="$(presentation.SupervisedUserCreationEnabled_Policy)" key="Software\Policies\OpenFin" valueName="SupervisedUserCreationEnabled">
+      <parentCategory ref="LocallyManagedUsers_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="NativeMessagingBlacklist_Policy" class="Machine" displayName="$(string.NativeMessagingBlacklist_Policy)" explainText="$(string.NativeMessagingBlacklist_Explain)" presentation="$(presentation.NativeMessagingBlacklist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="NativeMessaging_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="NativeMessagingBlacklist_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="NativeMessagingWhitelist_Policy" class="Machine" displayName="$(string.NativeMessagingWhitelist_Policy)" explainText="$(string.NativeMessagingWhitelist_Explain)" presentation="$(presentation.NativeMessagingWhitelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="NativeMessaging_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="NativeMessagingWhitelist_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="NativeMessagingUserLevelHosts_Policy" class="Machine" displayName="$(string.NativeMessagingUserLevelHosts_Policy)" explainText="$(string.NativeMessagingUserLevelHosts_Explain)" presentation="$(presentation.NativeMessagingUserLevelHosts_Policy)" key="Software\Policies\OpenFin" valueName="NativeMessagingUserLevelHosts">
+      <parentCategory ref="NativeMessaging_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="PasswordManagerEnabled_Policy" class="Machine" displayName="$(string.PasswordManagerEnabled_Policy)" explainText="$(string.PasswordManagerEnabled_Explain)" presentation="$(presentation.PasswordManagerEnabled_Policy)" key="Software\Policies\OpenFin" valueName="PasswordManagerEnabled">
+      <parentCategory ref="PasswordManager_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="PasswordManagerAllowShowPasswords_Policy" class="Machine" displayName="$(string.PasswordManagerAllowShowPasswords_Policy)" explainText="$(string.PasswordManagerAllowShowPasswords_Explain)" presentation="$(presentation.PasswordManagerAllowShowPasswords_Policy)" key="Software\Policies\OpenFin" valueName="PasswordManagerAllowShowPasswords">
+      <parentCategory ref="PasswordManager_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AuthSchemes_Policy" class="Machine" displayName="$(string.AuthSchemes_Policy)" explainText="$(string.AuthSchemes_Explain)" presentation="$(presentation.AuthSchemes_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="AuthSchemes_Part" valueName="AuthSchemes" />
+      </elements>
+    </policy>
+    <policy name="DisableAuthNegotiateCnameLookup_Policy" class="Machine" displayName="$(string.DisableAuthNegotiateCnameLookup_Policy)" explainText="$(string.DisableAuthNegotiateCnameLookup_Explain)" presentation="$(presentation.DisableAuthNegotiateCnameLookup_Policy)" key="Software\Policies\OpenFin" valueName="DisableAuthNegotiateCnameLookup">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="EnableAuthNegotiatePort_Policy" class="Machine" displayName="$(string.EnableAuthNegotiatePort_Policy)" explainText="$(string.EnableAuthNegotiatePort_Explain)" presentation="$(presentation.EnableAuthNegotiatePort_Policy)" key="Software\Policies\OpenFin" valueName="EnableAuthNegotiatePort">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AuthServerWhitelist_Policy" class="Machine" displayName="$(string.AuthServerWhitelist_Policy)" explainText="$(string.AuthServerWhitelist_Explain)" presentation="$(presentation.AuthServerWhitelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="AuthServerWhitelist_Part" valueName="AuthServerWhitelist" />
+      </elements>
+    </policy>
+    <policy name="AuthNegotiateDelegateWhitelist_Policy" class="Machine" displayName="$(string.AuthNegotiateDelegateWhitelist_Policy)" explainText="$(string.AuthNegotiateDelegateWhitelist_Explain)" presentation="$(presentation.AuthNegotiateDelegateWhitelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="AuthNegotiateDelegateWhitelist_Part" valueName="AuthNegotiateDelegateWhitelist" />
+      </elements>
+    </policy>
+    <policy name="AllowCrossOriginAuthPrompt_Policy" class="Machine" displayName="$(string.AllowCrossOriginAuthPrompt_Policy)" explainText="$(string.AllowCrossOriginAuthPrompt_Explain)" presentation="$(presentation.AllowCrossOriginAuthPrompt_Policy)" key="Software\Policies\OpenFin" valueName="AllowCrossOriginAuthPrompt">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ProxyMode_Policy" class="Machine" displayName="$(string.ProxyMode_Policy)" explainText="$(string.ProxyMode_Explain)" presentation="$(presentation.ProxyMode_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Proxy_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="ProxyMode_Part" valueName="ProxyMode">
+          <item displayName="$(string.ProxyDisabled_DropDown)">
+            <value>
+              <string>direct</string>
+            </value>
+          </item>
+          <item displayName="$(string.ProxyAutoDetect_DropDown)">
+            <value>
+              <string>auto_detect</string>
+            </value>
+          </item>
+          <item displayName="$(string.ProxyPacScript_DropDown)">
+            <value>
+              <string>pac_script</string>
+            </value>
+          </item>
+          <item displayName="$(string.ProxyFixedServers_DropDown)">
+            <value>
+              <string>fixed_servers</string>
+            </value>
+          </item>
+          <item displayName="$(string.ProxyUseSystem_DropDown)">
+            <value>
+              <string>system</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="ProxyServer_Policy" class="Machine" displayName="$(string.ProxyServer_Policy)" explainText="$(string.ProxyServer_Explain)" presentation="$(presentation.ProxyServer_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Proxy_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="ProxyServer_Part" valueName="ProxyServer" />
+      </elements>
+    </policy>
+    <policy name="ProxyPacUrl_Policy" class="Machine" displayName="$(string.ProxyPacUrl_Policy)" explainText="$(string.ProxyPacUrl_Explain)" presentation="$(presentation.ProxyPacUrl_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Proxy_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="ProxyPacUrl_Part" valueName="ProxyPacUrl" />
+      </elements>
+    </policy>
+    <policy name="ProxyBypassList_Policy" class="Machine" displayName="$(string.ProxyBypassList_Policy)" explainText="$(string.ProxyBypassList_Explain)" presentation="$(presentation.ProxyBypassList_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Proxy_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="ProxyBypassList_Part" valueName="ProxyBypassList" />
+      </elements>
+    </policy>
+    <policy name="RestoreOnStartup_Policy" class="Machine" displayName="$(string.RestoreOnStartup_Policy)" explainText="$(string.RestoreOnStartup_Explain)" presentation="$(presentation.RestoreOnStartup_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RestoreOnStartupGroup_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="RestoreOnStartup_Part" valueName="RestoreOnStartup">
+          <item displayName="$(string.RestoreOnStartupIsNewTabPage_DropDown)">
+            <value>
+              <decimal value="5" />
+            </value>
+          </item>
+          <item displayName="$(string.RestoreOnStartupIsLastSession_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.RestoreOnStartupIsURLs_DropDown)">
+            <value>
+              <decimal value="4" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="RestoreOnStartupURLs_Policy" class="Machine" displayName="$(string.RestoreOnStartupURLs_Policy)" explainText="$(string.RestoreOnStartupURLs_Explain)" presentation="$(presentation.RestoreOnStartupURLs_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RestoreOnStartupGroup_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="RestoreOnStartupURLs_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="AllowFileSelectionDialogs_Policy" class="User" displayName="$(string.AllowFileSelectionDialogs_Policy)" explainText="$(string.AllowFileSelectionDialogs_Explain)" presentation="$(presentation.AllowFileSelectionDialogs_Policy)" key="Software\Policies\OpenFin" valueName="AllowFileSelectionDialogs">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AllowOutdatedPlugins_Policy" class="User" displayName="$(string.AllowOutdatedPlugins_Policy)" explainText="$(string.AllowOutdatedPlugins_Explain)" presentation="$(presentation.AllowOutdatedPlugins_Policy)" key="Software\Policies\OpenFin" valueName="AllowOutdatedPlugins">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AlternateErrorPagesEnabled_Policy" class="User" displayName="$(string.AlternateErrorPagesEnabled_Policy)" explainText="$(string.AlternateErrorPagesEnabled_Explain)" presentation="$(presentation.AlternateErrorPagesEnabled_Policy)" key="Software\Policies\OpenFin" valueName="AlternateErrorPagesEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AlwaysAuthorizePlugins_Policy" class="User" displayName="$(string.AlwaysAuthorizePlugins_Policy)" explainText="$(string.AlwaysAuthorizePlugins_Explain)" presentation="$(presentation.AlwaysAuthorizePlugins_Policy)" key="Software\Policies\OpenFin" valueName="AlwaysAuthorizePlugins">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ApplicationLocaleValue_Policy" class="User" displayName="$(string.ApplicationLocaleValue_Policy)" explainText="$(string.ApplicationLocaleValue_Explain)" presentation="$(presentation.ApplicationLocaleValue_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="ApplicationLocaleValue_Part" valueName="ApplicationLocaleValue" />
+      </elements>
+    </policy>
+    <policy name="AudioCaptureAllowed_Policy" class="User" displayName="$(string.AudioCaptureAllowed_Policy)" explainText="$(string.AudioCaptureAllowed_Explain)" presentation="$(presentation.AudioCaptureAllowed_Policy)" key="Software\Policies\OpenFin" valueName="AudioCaptureAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AudioCaptureAllowedUrls_Policy" class="User" displayName="$(string.AudioCaptureAllowedUrls_Policy)" explainText="$(string.AudioCaptureAllowedUrls_Explain)" presentation="$(presentation.AudioCaptureAllowedUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="AudioCaptureAllowedUrls_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="AutoFillEnabled_Policy" class="User" displayName="$(string.AutoFillEnabled_Policy)" explainText="$(string.AutoFillEnabled_Explain)" presentation="$(presentation.AutoFillEnabled_Policy)" key="Software\Policies\OpenFin" valueName="AutoFillEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BackgroundModeEnabled_Policy" class="User" displayName="$(string.BackgroundModeEnabled_Policy)" explainText="$(string.BackgroundModeEnabled_Explain)" presentation="$(presentation.BackgroundModeEnabled_Policy)" key="Software\Policies\OpenFin" valueName="BackgroundModeEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BlockThirdPartyCookies_Policy" class="User" displayName="$(string.BlockThirdPartyCookies_Policy)" explainText="$(string.BlockThirdPartyCookies_Explain)" presentation="$(presentation.BlockThirdPartyCookies_Policy)" key="Software\Policies\OpenFin" valueName="BlockThirdPartyCookies">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BookmarkBarEnabled_Policy" class="User" displayName="$(string.BookmarkBarEnabled_Policy)" explainText="$(string.BookmarkBarEnabled_Explain)" presentation="$(presentation.BookmarkBarEnabled_Policy)" key="Software\Policies\OpenFin" valueName="BookmarkBarEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BrowserAddPersonEnabled_Policy" class="User" displayName="$(string.BrowserAddPersonEnabled_Policy)" explainText="$(string.BrowserAddPersonEnabled_Explain)" presentation="$(presentation.BrowserAddPersonEnabled_Policy)" key="Software\Policies\OpenFin" valueName="BrowserAddPersonEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BrowserGuestModeEnabled_Policy" class="User" displayName="$(string.BrowserGuestModeEnabled_Policy)" explainText="$(string.BrowserGuestModeEnabled_Explain)" presentation="$(presentation.BrowserGuestModeEnabled_Policy)" key="Software\Policies\OpenFin" valueName="BrowserGuestModeEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="BuiltInDnsClientEnabled_Policy" class="User" displayName="$(string.BuiltInDnsClientEnabled_Policy)" explainText="$(string.BuiltInDnsClientEnabled_Explain)" presentation="$(presentation.BuiltInDnsClientEnabled_Policy)" key="Software\Policies\OpenFin" valueName="BuiltInDnsClientEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="CloudPrintProxyEnabled_Policy" class="User" displayName="$(string.CloudPrintProxyEnabled_Policy)" explainText="$(string.CloudPrintProxyEnabled_Explain)" presentation="$(presentation.CloudPrintProxyEnabled_Policy)" key="Software\Policies\OpenFin" valueName="CloudPrintProxyEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="CloudPrintSubmitEnabled_Policy" class="User" displayName="$(string.CloudPrintSubmitEnabled_Policy)" explainText="$(string.CloudPrintSubmitEnabled_Explain)" presentation="$(presentation.CloudPrintSubmitEnabled_Policy)" key="Software\Policies\OpenFin" valueName="CloudPrintSubmitEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DefaultBrowserSettingEnabled_Policy" class="User" displayName="$(string.DefaultBrowserSettingEnabled_Policy)" explainText="$(string.DefaultBrowserSettingEnabled_Explain)" presentation="$(presentation.DefaultBrowserSettingEnabled_Policy)" key="Software\Policies\OpenFin" valueName="DefaultBrowserSettingEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DeveloperToolsDisabled_Policy" class="User" displayName="$(string.DeveloperToolsDisabled_Policy)" explainText="$(string.DeveloperToolsDisabled_Explain)" presentation="$(presentation.DeveloperToolsDisabled_Policy)" key="Software\Policies\OpenFin" valueName="DeveloperToolsDisabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="Disable3DAPIs_Policy" class="User" displayName="$(string.Disable3DAPIs_Policy)" explainText="$(string.Disable3DAPIs_Explain)" presentation="$(presentation.Disable3DAPIs_Policy)" key="Software\Policies\OpenFin" valueName="Disable3DAPIs">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisablePluginFinder_Policy" class="User" displayName="$(string.DisablePluginFinder_Policy)" explainText="$(string.DisablePluginFinder_Explain)" presentation="$(presentation.DisablePluginFinder_Policy)" key="Software\Policies\OpenFin" valueName="DisablePluginFinder">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableSSLRecordSplitting_Policy" class="User" displayName="$(string.DisableSSLRecordSplitting_Policy)" explainText="$(string.DisableSSLRecordSplitting_Explain)" presentation="$(presentation.DisableSSLRecordSplitting_Policy)" key="Software\Policies\OpenFin" valueName="DisableSSLRecordSplitting">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableSafeBrowsingProceedAnyway_Policy" class="User" displayName="$(string.DisableSafeBrowsingProceedAnyway_Policy)" explainText="$(string.DisableSafeBrowsingProceedAnyway_Explain)" presentation="$(presentation.DisableSafeBrowsingProceedAnyway_Policy)" key="Software\Policies\OpenFin" valueName="DisableSafeBrowsingProceedAnyway">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableScreenshots_Policy" class="User" displayName="$(string.DisableScreenshots_Policy)" explainText="$(string.DisableScreenshots_Explain)" presentation="$(presentation.DisableScreenshots_Policy)" key="Software\Policies\OpenFin" valueName="DisableScreenshots">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisableSpdy_Policy" class="User" displayName="$(string.DisableSpdy_Policy)" explainText="$(string.DisableSpdy_Explain)" presentation="$(presentation.DisableSpdy_Policy)" key="Software\Policies\OpenFin" valueName="DisableSpdy">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DisabledPlugins_Policy" class="User" displayName="$(string.DisabledPlugins_Policy)" explainText="$(string.DisabledPlugins_Explain)" presentation="$(presentation.DisabledPlugins_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="DisabledPlugins_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="DisabledPluginsExceptions_Policy" class="User" displayName="$(string.DisabledPluginsExceptions_Policy)" explainText="$(string.DisabledPluginsExceptions_Explain)" presentation="$(presentation.DisabledPluginsExceptions_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="DisabledPluginsExceptions_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="DiskCacheDir_Policy" class="User" displayName="$(string.DiskCacheDir_Policy)" explainText="$(string.DiskCacheDir_Explain)" presentation="$(presentation.DiskCacheDir_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DiskCacheDir_Part" valueName="DiskCacheDir" />
+      </elements>
+    </policy>
+    <policy name="DiskCacheSize_Policy" class="User" displayName="$(string.DiskCacheSize_Policy)" explainText="$(string.DiskCacheSize_Explain)" presentation="$(presentation.DiskCacheSize_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <decimal id="DiskCacheSize_Part" valueName="DiskCacheSize" minValue="0" maxValue="2000000000" />
+      </elements>
+    </policy>
+    <policy name="DnsPrefetchingEnabled_Policy" class="User" displayName="$(string.DnsPrefetchingEnabled_Policy)" explainText="$(string.DnsPrefetchingEnabled_Explain)" presentation="$(presentation.DnsPrefetchingEnabled_Policy)" key="Software\Policies\OpenFin" valueName="DnsPrefetchingEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DownloadDirectory_Policy" class="User" displayName="$(string.DownloadDirectory_Policy)" explainText="$(string.DownloadDirectory_Explain)" presentation="$(presentation.DownloadDirectory_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DownloadDirectory_Part" valueName="DownloadDirectory" />
+      </elements>
+    </policy>
+    <policy name="EditBookmarksEnabled_Policy" class="User" displayName="$(string.EditBookmarksEnabled_Policy)" explainText="$(string.EditBookmarksEnabled_Explain)" presentation="$(presentation.EditBookmarksEnabled_Policy)" key="Software\Policies\OpenFin" valueName="EditBookmarksEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="EnableDeprecatedWebPlatformFeatures_Policy" class="User" displayName="$(string.EnableDeprecatedWebPlatformFeatures_Policy)" explainText="$(string.EnableDeprecatedWebPlatformFeatures_Explain)" presentation="$(presentation.EnableDeprecatedWebPlatformFeatures_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="EnableDeprecatedWebPlatformFeatures_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="EnableOnlineRevocationChecks_Policy" class="User" displayName="$(string.EnableOnlineRevocationChecks_Policy)" explainText="$(string.EnableOnlineRevocationChecks_Explain)" presentation="$(presentation.EnableOnlineRevocationChecks_Policy)" key="Software\Policies\OpenFin" valueName="EnableOnlineRevocationChecks">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="EnabledPlugins_Policy" class="User" displayName="$(string.EnabledPlugins_Policy)" explainText="$(string.EnabledPlugins_Explain)" presentation="$(presentation.EnabledPlugins_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="EnabledPlugins_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ForceEphemeralProfiles_Policy" class="User" displayName="$(string.ForceEphemeralProfiles_Policy)" explainText="$(string.ForceEphemeralProfiles_Explain)" presentation="$(presentation.ForceEphemeralProfiles_Policy)" key="Software\Policies\OpenFin" valueName="ForceEphemeralProfiles">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ForceGoogleSafeSearch_Policy" class="User" displayName="$(string.ForceGoogleSafeSearch_Policy)" explainText="$(string.ForceGoogleSafeSearch_Explain)" presentation="$(presentation.ForceGoogleSafeSearch_Policy)" key="Software\Policies\OpenFin" valueName="ForceGoogleSafeSearch">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ForceYouTubeSafetyMode_Policy" class="User" displayName="$(string.ForceYouTubeSafetyMode_Policy)" explainText="$(string.ForceYouTubeSafetyMode_Explain)" presentation="$(presentation.ForceYouTubeSafetyMode_Policy)" key="Software\Policies\OpenFin" valueName="ForceYouTubeSafetyMode">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="FullscreenAllowed_Policy" class="User" displayName="$(string.FullscreenAllowed_Policy)" explainText="$(string.FullscreenAllowed_Explain)" presentation="$(presentation.FullscreenAllowed_Policy)" key="Software\Policies\OpenFin" valueName="FullscreenAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="GCFUserDataDir_Policy" class="User" displayName="$(string.GCFUserDataDir_Policy)" explainText="$(string.GCFUserDataDir_Explain)" presentation="$(presentation.GCFUserDataDir_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="GCFUserDataDir_Part" valueName="GCFUserDataDir" />
+      </elements>
+    </policy>
+    <policy name="HideWebStoreIcon_Policy" class="User" displayName="$(string.HideWebStoreIcon_Policy)" explainText="$(string.HideWebStoreIcon_Explain)" presentation="$(presentation.HideWebStoreIcon_Policy)" key="Software\Policies\OpenFin" valueName="HideWebStoreIcon">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportAutofillFormData_Policy" class="User" displayName="$(string.ImportAutofillFormData_Policy)" explainText="$(string.ImportAutofillFormData_Explain)" presentation="$(presentation.ImportAutofillFormData_Policy)" key="Software\Policies\OpenFin" valueName="ImportAutofillFormData">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportBookmarks_Policy" class="User" displayName="$(string.ImportBookmarks_Policy)" explainText="$(string.ImportBookmarks_Explain)" presentation="$(presentation.ImportBookmarks_Policy)" key="Software\Policies\OpenFin" valueName="ImportBookmarks">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportHistory_Policy" class="User" displayName="$(string.ImportHistory_Policy)" explainText="$(string.ImportHistory_Explain)" presentation="$(presentation.ImportHistory_Policy)" key="Software\Policies\OpenFin" valueName="ImportHistory">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportHomepage_Policy" class="User" displayName="$(string.ImportHomepage_Policy)" explainText="$(string.ImportHomepage_Explain)" presentation="$(presentation.ImportHomepage_Policy)" key="Software\Policies\OpenFin" valueName="ImportHomepage">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportSavedPasswords_Policy" class="User" displayName="$(string.ImportSavedPasswords_Policy)" explainText="$(string.ImportSavedPasswords_Explain)" presentation="$(presentation.ImportSavedPasswords_Policy)" key="Software\Policies\OpenFin" valueName="ImportSavedPasswords">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ImportSearchEngine_Policy" class="User" displayName="$(string.ImportSearchEngine_Policy)" explainText="$(string.ImportSearchEngine_Explain)" presentation="$(presentation.ImportSearchEngine_Policy)" key="Software\Policies\OpenFin" valueName="ImportSearchEngine">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="IncognitoModeAvailability_Policy" class="User" displayName="$(string.IncognitoModeAvailability_Policy)" explainText="$(string.IncognitoModeAvailability_Explain)" presentation="$(presentation.IncognitoModeAvailability_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="IncognitoModeAvailability_Part" valueName="IncognitoModeAvailability">
+          <item displayName="$(string.Enabled_DropDown)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.Disabled_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.Forced_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="ManagedBookmarks_Policy" class="User" displayName="$(string.ManagedBookmarks_Policy)" explainText="$(string.ManagedBookmarks_Explain)" presentation="$(presentation.ManagedBookmarks_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="ManagedBookmarks_Part" valueName="ManagedBookmarks" />
+      </elements>
+    </policy>
+    <policy name="MaxConnectionsPerProxy_Policy" class="User" displayName="$(string.MaxConnectionsPerProxy_Policy)" explainText="$(string.MaxConnectionsPerProxy_Explain)" presentation="$(presentation.MaxConnectionsPerProxy_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <decimal id="MaxConnectionsPerProxy_Part" valueName="MaxConnectionsPerProxy" minValue="0" maxValue="2000000000" />
+      </elements>
+    </policy>
+    <policy name="MaxInvalidationFetchDelay_Policy" class="User" displayName="$(string.MaxInvalidationFetchDelay_Policy)" explainText="$(string.MaxInvalidationFetchDelay_Explain)" presentation="$(presentation.MaxInvalidationFetchDelay_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <decimal id="MaxInvalidationFetchDelay_Part" valueName="MaxInvalidationFetchDelay" minValue="0" maxValue="2000000000" />
+      </elements>
+    </policy>
+    <policy name="MediaCacheSize_Policy" class="User" displayName="$(string.MediaCacheSize_Policy)" explainText="$(string.MediaCacheSize_Explain)" presentation="$(presentation.MediaCacheSize_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <decimal id="MediaCacheSize_Part" valueName="MediaCacheSize" minValue="0" maxValue="2000000000" />
+      </elements>
+    </policy>
+    <policy name="MetricsReportingEnabled_Policy" class="User" displayName="$(string.MetricsReportingEnabled_Policy)" explainText="$(string.MetricsReportingEnabled_Explain)" presentation="$(presentation.MetricsReportingEnabled_Policy)" key="Software\Policies\OpenFin" valueName="MetricsReportingEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="NetworkPredictionOptions_Policy" class="User" displayName="$(string.NetworkPredictionOptions_Policy)" explainText="$(string.NetworkPredictionOptions_Explain)" presentation="$(presentation.NetworkPredictionOptions_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="NetworkPredictionOptions_Part" valueName="NetworkPredictionOptions">
+          <item displayName="$(string.NetworkPredictionAlways_DropDown)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.NetworkPredictionWifiOnly_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.NetworkPredictionNever_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="PrintingEnabled_Policy" class="User" displayName="$(string.PrintingEnabled_Policy)" explainText="$(string.PrintingEnabled_Explain)" presentation="$(presentation.PrintingEnabled_Policy)" key="Software\Policies\OpenFin" valueName="PrintingEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="QuicAllowed_Policy" class="User" displayName="$(string.QuicAllowed_Policy)" explainText="$(string.QuicAllowed_Explain)" presentation="$(presentation.QuicAllowed_Policy)" key="Software\Policies\OpenFin" valueName="QuicAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RequireOnlineRevocationChecksForLocalAnchors_Policy" class="User" displayName="$(string.RequireOnlineRevocationChecksForLocalAnchors_Policy)" explainText="$(string.RequireOnlineRevocationChecksForLocalAnchors_Explain)" presentation="$(presentation.RequireOnlineRevocationChecksForLocalAnchors_Policy)" key="Software\Policies\OpenFin" valueName="RequireOnlineRevocationChecksForLocalAnchors">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RestrictSigninToPattern_Policy" class="User" displayName="$(string.RestrictSigninToPattern_Policy)" explainText="$(string.RestrictSigninToPattern_Explain)" presentation="$(presentation.RestrictSigninToPattern_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RestrictSigninToPattern_Part" valueName="RestrictSigninToPattern" />
+      </elements>
+    </policy>
+    <policy name="SSLErrorOverrideAllowed_Policy" class="User" displayName="$(string.SSLErrorOverrideAllowed_Policy)" explainText="$(string.SSLErrorOverrideAllowed_Explain)" presentation="$(presentation.SSLErrorOverrideAllowed_Policy)" key="Software\Policies\OpenFin" valueName="SSLErrorOverrideAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SSLVersionFallbackMin_Policy" class="User" displayName="$(string.SSLVersionFallbackMin_Policy)" explainText="$(string.SSLVersionFallbackMin_Explain)" presentation="$(presentation.SSLVersionFallbackMin_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="SSLVersionFallbackMin_Part" valueName="SSLVersionFallbackMin">
+          <item displayName="$(string.SSLv3_DropDown)">
+            <value>
+              <string>ssl3</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_DropDown)">
+            <value>
+              <string>tls1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_1_DropDown)">
+            <value>
+              <string>tls1.1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_2_DropDown)">
+            <value>
+              <string>tls1.2</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="SSLVersionMin_Policy" class="User" displayName="$(string.SSLVersionMin_Policy)" explainText="$(string.SSLVersionMin_Explain)" presentation="$(presentation.SSLVersionMin_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="SSLVersionMin_Part" valueName="SSLVersionMin">
+          <item displayName="$(string.SSLv3_DropDown)">
+            <value>
+              <string>ssl3</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_DropDown)">
+            <value>
+              <string>tls1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_1_DropDown)">
+            <value>
+              <string>tls1.1</string>
+            </value>
+          </item>
+          <item displayName="$(string.TLSv1_2_DropDown)">
+            <value>
+              <string>tls1.2</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="SafeBrowsingEnabled_Policy" class="User" displayName="$(string.SafeBrowsingEnabled_Policy)" explainText="$(string.SafeBrowsingEnabled_Explain)" presentation="$(presentation.SafeBrowsingEnabled_Policy)" key="Software\Policies\OpenFin" valueName="SafeBrowsingEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SafeBrowsingExtendedReportingOptInAllowed_Policy" class="User" displayName="$(string.SafeBrowsingExtendedReportingOptInAllowed_Policy)" explainText="$(string.SafeBrowsingExtendedReportingOptInAllowed_Explain)" presentation="$(presentation.SafeBrowsingExtendedReportingOptInAllowed_Policy)" key="Software\Policies\OpenFin" valueName="SafeBrowsingExtendedReportingOptInAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SavingBrowserHistoryDisabled_Policy" class="User" displayName="$(string.SavingBrowserHistoryDisabled_Policy)" explainText="$(string.SavingBrowserHistoryDisabled_Explain)" presentation="$(presentation.SavingBrowserHistoryDisabled_Policy)" key="Software\Policies\OpenFin" valueName="SavingBrowserHistoryDisabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SearchSuggestEnabled_Policy" class="User" displayName="$(string.SearchSuggestEnabled_Policy)" explainText="$(string.SearchSuggestEnabled_Explain)" presentation="$(presentation.SearchSuggestEnabled_Policy)" key="Software\Policies\OpenFin" valueName="SearchSuggestEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ShowAppsShortcutInBookmarkBar_Policy" class="User" displayName="$(string.ShowAppsShortcutInBookmarkBar_Policy)" explainText="$(string.ShowAppsShortcutInBookmarkBar_Explain)" presentation="$(presentation.ShowAppsShortcutInBookmarkBar_Policy)" key="Software\Policies\OpenFin" valueName="ShowAppsShortcutInBookmarkBar">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ShowHomeButton_Policy" class="User" displayName="$(string.ShowHomeButton_Policy)" explainText="$(string.ShowHomeButton_Explain)" presentation="$(presentation.ShowHomeButton_Policy)" key="Software\Policies\OpenFin" valueName="ShowHomeButton">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SpellCheckServiceEnabled_Policy" class="User" displayName="$(string.SpellCheckServiceEnabled_Policy)" explainText="$(string.SpellCheckServiceEnabled_Explain)" presentation="$(presentation.SpellCheckServiceEnabled_Policy)" key="Software\Policies\OpenFin" valueName="SpellCheckServiceEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SuppressChromeFrameTurndownPrompt_Policy" class="User" displayName="$(string.SuppressChromeFrameTurndownPrompt_Policy)" explainText="$(string.SuppressChromeFrameTurndownPrompt_Explain)" presentation="$(presentation.SuppressChromeFrameTurndownPrompt_Policy)" key="Software\Policies\OpenFin" valueName="SuppressChromeFrameTurndownPrompt">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SyncDisabled_Policy" class="User" displayName="$(string.SyncDisabled_Policy)" explainText="$(string.SyncDisabled_Explain)" presentation="$(presentation.SyncDisabled_Policy)" key="Software\Policies\OpenFin" valueName="SyncDisabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="TranslateEnabled_Policy" class="User" displayName="$(string.TranslateEnabled_Policy)" explainText="$(string.TranslateEnabled_Explain)" presentation="$(presentation.TranslateEnabled_Policy)" key="Software\Policies\OpenFin" valueName="TranslateEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="URLBlacklist_Policy" class="User" displayName="$(string.URLBlacklist_Policy)" explainText="$(string.URLBlacklist_Explain)" presentation="$(presentation.URLBlacklist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="URLBlacklist_Part" key="$(string.unknown_13)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="URLWhitelist_Policy" class="User" displayName="$(string.URLWhitelist_Policy)" explainText="$(string.URLWhitelist_Explain)" presentation="$(presentation.URLWhitelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="URLWhitelist_Part" key="$(string.unknown_13)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="UserDataDir_Policy" class="User" displayName="$(string.UserDataDir_Policy)" explainText="$(string.UserDataDir_Explain)" presentation="$(presentation.UserDataDir_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="UserDataDir_Part" valueName="UserDataDir" />
+      </elements>
+    </policy>
+    <policy name="VideoCaptureAllowed_Policy" class="User" displayName="$(string.VideoCaptureAllowed_Policy)" explainText="$(string.VideoCaptureAllowed_Explain)" presentation="$(presentation.VideoCaptureAllowed_Policy)" key="Software\Policies\OpenFin" valueName="VideoCaptureAllowed">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="VideoCaptureAllowedUrls_Policy" class="User" displayName="$(string.VideoCaptureAllowedUrls_Policy)" explainText="$(string.VideoCaptureAllowedUrls_Explain)" presentation="$(presentation.VideoCaptureAllowedUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="VideoCaptureAllowedUrls_Part" key="$(string.unknown_13)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="WPADQuickCheckEnabled_Policy" class="User" displayName="$(string.WPADQuickCheckEnabled_Policy)" explainText="$(string.WPADQuickCheckEnabled_Explain)" presentation="$(presentation.WPADQuickCheckEnabled_Policy)" key="Software\Policies\OpenFin" valueName="WPADQuickCheckEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="WelcomePageOnOSUpgradeEnabled_Policy" class="User" displayName="$(string.WelcomePageOnOSUpgradeEnabled_Policy)" explainText="$(string.WelcomePageOnOSUpgradeEnabled_Explain)" presentation="$(presentation.WelcomePageOnOSUpgradeEnabled_Policy)" key="Software\Policies\OpenFin" valueName="WelcomePageOnOSUpgradeEnabled">
+      <parentCategory ref="openfin" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ChromeFrameContentTypes_Policy" class="User" displayName="$(string.ChromeFrameContentTypes_Policy)" explainText="$(string.ChromeFrameContentTypes_Explain)" presentation="$(presentation.ChromeFrameContentTypes_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ChromeFrameContentTypes_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ChromeFrameContentTypes_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostFirewallTraversal_Policy" class="User" displayName="$(string.RemoteAccessHostFirewallTraversal_Policy)" explainText="$(string.RemoteAccessHostFirewallTraversal_Explain)" presentation="$(presentation.RemoteAccessHostFirewallTraversal_Policy)" key="Software\Policies\OpenFin" valueName="RemoteAccessHostFirewallTraversal">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RemoteAccessHostDomain_Policy" class="User" displayName="$(string.RemoteAccessHostDomain_Policy)" explainText="$(string.RemoteAccessHostDomain_Explain)" presentation="$(presentation.RemoteAccessHostDomain_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostDomain_Part" valueName="RemoteAccessHostDomain" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostTalkGadgetPrefix_Policy" class="User" displayName="$(string.RemoteAccessHostTalkGadgetPrefix_Policy)" explainText="$(string.RemoteAccessHostTalkGadgetPrefix_Explain)" presentation="$(presentation.RemoteAccessHostTalkGadgetPrefix_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostTalkGadgetPrefix_Part" valueName="RemoteAccessHostTalkGadgetPrefix" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostRequireCurtain_Policy" class="User" displayName="$(string.RemoteAccessHostRequireCurtain_Policy)" explainText="$(string.RemoteAccessHostRequireCurtain_Explain)" presentation="$(presentation.RemoteAccessHostRequireCurtain_Policy)" key="Software\Policies\OpenFin" valueName="RemoteAccessHostRequireCurtain">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RemoteAccessHostAllowClientPairing_Policy" class="User" displayName="$(string.RemoteAccessHostAllowClientPairing_Policy)" explainText="$(string.RemoteAccessHostAllowClientPairing_Explain)" presentation="$(presentation.RemoteAccessHostAllowClientPairing_Policy)" key="Software\Policies\OpenFin" valueName="RemoteAccessHostAllowClientPairing">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RemoteAccessHostAllowGnubbyAuth_Policy" class="User" displayName="$(string.RemoteAccessHostAllowGnubbyAuth_Policy)" explainText="$(string.RemoteAccessHostAllowGnubbyAuth_Explain)" presentation="$(presentation.RemoteAccessHostAllowGnubbyAuth_Policy)" key="Software\Policies\OpenFin" valueName="RemoteAccessHostAllowGnubbyAuth">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RemoteAccessHostAllowRelayedConnection_Policy" class="User" displayName="$(string.RemoteAccessHostAllowRelayedConnection_Policy)" explainText="$(string.RemoteAccessHostAllowRelayedConnection_Explain)" presentation="$(presentation.RemoteAccessHostAllowRelayedConnection_Policy)" key="Software\Policies\OpenFin" valueName="RemoteAccessHostAllowRelayedConnection">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="RemoteAccessHostUdpPortRange_Policy" class="User" displayName="$(string.RemoteAccessHostUdpPortRange_Policy)" explainText="$(string.RemoteAccessHostUdpPortRange_Explain)" presentation="$(presentation.RemoteAccessHostUdpPortRange_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostUdpPortRange_Part" valueName="RemoteAccessHostUdpPortRange" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostTokenUrl_Policy" class="User" displayName="$(string.RemoteAccessHostTokenUrl_Policy)" explainText="$(string.RemoteAccessHostTokenUrl_Explain)" presentation="$(presentation.RemoteAccessHostTokenUrl_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostTokenUrl_Part" valueName="RemoteAccessHostTokenUrl" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostTokenValidationUrl_Policy" class="User" displayName="$(string.RemoteAccessHostTokenValidationUrl_Policy)" explainText="$(string.RemoteAccessHostTokenValidationUrl_Explain)" presentation="$(presentation.RemoteAccessHostTokenValidationUrl_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostTokenValidationUrl_Part" valueName="RemoteAccessHostTokenValidationUrl" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostTokenValidationCertificateIssuer_Policy" class="User" displayName="$(string.RemoteAccessHostTokenValidationCertificateIssuer_Policy)" explainText="$(string.RemoteAccessHostTokenValidationCertificateIssuer_Explain)" presentation="$(presentation.RemoteAccessHostTokenValidationCertificateIssuer_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostTokenValidationCertificateIssuer_Part" valueName="RemoteAccessHostTokenValidationCertificateIssuer" />
+      </elements>
+    </policy>
+    <policy name="RemoteAccessHostDebugOverridePolicies_Policy" class="User" displayName="$(string.RemoteAccessHostDebugOverridePolicies_Policy)" explainText="$(string.RemoteAccessHostDebugOverridePolicies_Explain)" presentation="$(presentation.RemoteAccessHostDebugOverridePolicies_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RemoteAccess_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="RemoteAccessHostDebugOverridePolicies_Part" valueName="RemoteAccessHostDebugOverridePolicies" />
+      </elements>
+    </policy>
+    <policy name="DefaultCookiesSetting_Policy" class="User" displayName="$(string.DefaultCookiesSetting_Policy)" explainText="$(string.DefaultCookiesSetting_Explain)" presentation="$(presentation.DefaultCookiesSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultCookiesSetting_Part" valueName="DefaultCookiesSetting">
+          <item displayName="$(string.AllowCookies_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockCookies_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.SessionOnly_DropDown)">
+            <value>
+              <decimal value="4" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultImagesSetting_Policy" class="User" displayName="$(string.DefaultImagesSetting_Policy)" explainText="$(string.DefaultImagesSetting_Explain)" presentation="$(presentation.DefaultImagesSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultImagesSetting_Part" valueName="DefaultImagesSetting">
+          <item displayName="$(string.AllowImages_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockImages_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultJavaScriptSetting_Policy" class="User" displayName="$(string.DefaultJavaScriptSetting_Policy)" explainText="$(string.DefaultJavaScriptSetting_Explain)" presentation="$(presentation.DefaultJavaScriptSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultJavaScriptSetting_Part" valueName="DefaultJavaScriptSetting">
+          <item displayName="$(string.AllowJavaScript_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockJavaScript_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultPluginsSetting_Policy" class="User" displayName="$(string.DefaultPluginsSetting_Policy)" explainText="$(string.DefaultPluginsSetting_Explain)" presentation="$(presentation.DefaultPluginsSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultPluginsSetting_Part" valueName="DefaultPluginsSetting">
+          <item displayName="$(string.AllowPlugins_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockPlugins_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.ClickToPlay_DropDown)">
+            <value>
+              <decimal value="3" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultPopupsSetting_Policy" class="User" displayName="$(string.DefaultPopupsSetting_Policy)" explainText="$(string.DefaultPopupsSetting_Explain)" presentation="$(presentation.DefaultPopupsSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultPopupsSetting_Part" valueName="DefaultPopupsSetting">
+          <item displayName="$(string.AllowPopups_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockPopups_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultNotificationsSetting_Policy" class="User" displayName="$(string.DefaultNotificationsSetting_Policy)" explainText="$(string.DefaultNotificationsSetting_Explain)" presentation="$(presentation.DefaultNotificationsSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultNotificationsSetting_Part" valueName="DefaultNotificationsSetting">
+          <item displayName="$(string.AllowNotifications_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockNotifications_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.AskNotifications_DropDown)">
+            <value>
+              <decimal value="3" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="DefaultGeolocationSetting_Policy" class="User" displayName="$(string.DefaultGeolocationSetting_Policy)" explainText="$(string.DefaultGeolocationSetting_Explain)" presentation="$(presentation.DefaultGeolocationSetting_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="DefaultGeolocationSetting_Part" valueName="DefaultGeolocationSetting">
+          <item displayName="$(string.AllowGeolocation_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.BlockGeolocation_DropDown)">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+          <item displayName="$(string.AskGeolocation_DropDown)">
+            <value>
+              <decimal value="3" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="AutoSelectCertificateForUrls_Policy" class="User" displayName="$(string.AutoSelectCertificateForUrls_Policy)" explainText="$(string.AutoSelectCertificateForUrls_Explain)" presentation="$(presentation.AutoSelectCertificateForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="AutoSelectCertificateForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="CookiesAllowedForUrls_Policy" class="User" displayName="$(string.CookiesAllowedForUrls_Policy)" explainText="$(string.CookiesAllowedForUrls_Explain)" presentation="$(presentation.CookiesAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="CookiesAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="CookiesBlockedForUrls_Policy" class="User" displayName="$(string.CookiesBlockedForUrls_Policy)" explainText="$(string.CookiesBlockedForUrls_Explain)" presentation="$(presentation.CookiesBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="CookiesBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="CookiesSessionOnlyForUrls_Policy" class="User" displayName="$(string.CookiesSessionOnlyForUrls_Policy)" explainText="$(string.CookiesSessionOnlyForUrls_Explain)" presentation="$(presentation.CookiesSessionOnlyForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="CookiesSessionOnlyForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ImagesAllowedForUrls_Policy" class="User" displayName="$(string.ImagesAllowedForUrls_Policy)" explainText="$(string.ImagesAllowedForUrls_Explain)" presentation="$(presentation.ImagesAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ImagesAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ImagesBlockedForUrls_Policy" class="User" displayName="$(string.ImagesBlockedForUrls_Policy)" explainText="$(string.ImagesBlockedForUrls_Explain)" presentation="$(presentation.ImagesBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ImagesBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="JavaScriptAllowedForUrls_Policy" class="User" displayName="$(string.JavaScriptAllowedForUrls_Policy)" explainText="$(string.JavaScriptAllowedForUrls_Explain)" presentation="$(presentation.JavaScriptAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="JavaScriptAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="JavaScriptBlockedForUrls_Policy" class="User" displayName="$(string.JavaScriptBlockedForUrls_Policy)" explainText="$(string.JavaScriptBlockedForUrls_Explain)" presentation="$(presentation.JavaScriptBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="JavaScriptBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="PluginsAllowedForUrls_Policy" class="User" displayName="$(string.PluginsAllowedForUrls_Policy)" explainText="$(string.PluginsAllowedForUrls_Explain)" presentation="$(presentation.PluginsAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="PluginsAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="PluginsBlockedForUrls_Policy" class="User" displayName="$(string.PluginsBlockedForUrls_Policy)" explainText="$(string.PluginsBlockedForUrls_Explain)" presentation="$(presentation.PluginsBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="PluginsBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="PopupsAllowedForUrls_Policy" class="User" displayName="$(string.PopupsAllowedForUrls_Policy)" explainText="$(string.PopupsAllowedForUrls_Explain)" presentation="$(presentation.PopupsAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="PopupsAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="PopupsBlockedForUrls_Policy" class="User" displayName="$(string.PopupsBlockedForUrls_Policy)" explainText="$(string.PopupsBlockedForUrls_Explain)" presentation="$(presentation.PopupsBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="PopupsBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="NotificationsAllowedForUrls_Policy" class="User" displayName="$(string.NotificationsAllowedForUrls_Policy)" explainText="$(string.NotificationsAllowedForUrls_Explain)" presentation="$(presentation.NotificationsAllowedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="NotificationsAllowedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="NotificationsBlockedForUrls_Policy" class="User" displayName="$(string.NotificationsBlockedForUrls_Policy)" explainText="$(string.NotificationsBlockedForUrls_Explain)" presentation="$(presentation.NotificationsBlockedForUrls_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ContentSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="NotificationsBlockedForUrls_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ChromeFrameRendererSettings_Policy" class="User" displayName="$(string.ChromeFrameRendererSettings_Policy)" explainText="$(string.ChromeFrameRendererSettings_Explain)" presentation="$(presentation.ChromeFrameRendererSettings_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ChromeFrameRendererSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="ChromeFrameRendererSettings_Part" valueName="ChromeFrameRendererSettings">
+          <item displayName="$(string.RenderInHost_DropDown)">
+            <value>
+              <decimal value="0" />
+            </value>
+          </item>
+          <item displayName="$(string.RenderInChromeFrame_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="RenderInChromeFrameList_Policy" class="User" displayName="$(string.RenderInChromeFrameList_Policy)" explainText="$(string.RenderInChromeFrameList_Explain)" presentation="$(presentation.RenderInChromeFrameList_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ChromeFrameRendererSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="RenderInChromeFrameList_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="RenderInHostList_Policy" class="User" displayName="$(string.RenderInHostList_Policy)" explainText="$(string.RenderInHostList_Explain)" presentation="$(presentation.RenderInHostList_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ChromeFrameRendererSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="RenderInHostList_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="AdditionalLaunchParameters_Policy" class="User" displayName="$(string.AdditionalLaunchParameters_Policy)" explainText="$(string.AdditionalLaunchParameters_Explain)" presentation="$(presentation.AdditionalLaunchParameters_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="ChromeFrameRendererSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="AdditionalLaunchParameters_Part" valueName="AdditionalLaunchParameters" />
+      </elements>
+    </policy>
+    <policy name="SkipMetadataCheck_Policy" class="User" displayName="$(string.SkipMetadataCheck_Policy)" explainText="$(string.SkipMetadataCheck_Explain)" presentation="$(presentation.SkipMetadataCheck_Policy)" key="Software\Policies\OpenFin" valueName="SkipMetadataCheck">
+      <parentCategory ref="ChromeFrameRendererSettings_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DefaultSearchProviderEnabled_Policy" class="User" displayName="$(string.DefaultSearchProviderEnabled_Policy)" explainText="$(string.DefaultSearchProviderEnabled_Explain)" presentation="$(presentation.DefaultSearchProviderEnabled_Policy)" key="Software\Policies\OpenFin" valueName="DefaultSearchProviderEnabled">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="DefaultSearchProviderName_Policy" class="User" displayName="$(string.DefaultSearchProviderName_Policy)" explainText="$(string.DefaultSearchProviderName_Explain)" presentation="$(presentation.DefaultSearchProviderName_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderName_Part" valueName="DefaultSearchProviderName" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderKeyword_Policy" class="User" displayName="$(string.DefaultSearchProviderKeyword_Policy)" explainText="$(string.DefaultSearchProviderKeyword_Explain)" presentation="$(presentation.DefaultSearchProviderKeyword_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderKeyword_Part" valueName="DefaultSearchProviderKeyword" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderSearchURL_Policy" class="User" displayName="$(string.DefaultSearchProviderSearchURL_Policy)" explainText="$(string.DefaultSearchProviderSearchURL_Explain)" presentation="$(presentation.DefaultSearchProviderSearchURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderSearchURL_Part" valueName="DefaultSearchProviderSearchURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderSuggestURL_Policy" class="User" displayName="$(string.DefaultSearchProviderSuggestURL_Policy)" explainText="$(string.DefaultSearchProviderSuggestURL_Explain)" presentation="$(presentation.DefaultSearchProviderSuggestURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderSuggestURL_Part" valueName="DefaultSearchProviderSuggestURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderInstantURL_Policy" class="User" displayName="$(string.DefaultSearchProviderInstantURL_Policy)" explainText="$(string.DefaultSearchProviderInstantURL_Explain)" presentation="$(presentation.DefaultSearchProviderInstantURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderInstantURL_Part" valueName="DefaultSearchProviderInstantURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderIconURL_Policy" class="User" displayName="$(string.DefaultSearchProviderIconURL_Policy)" explainText="$(string.DefaultSearchProviderIconURL_Explain)" presentation="$(presentation.DefaultSearchProviderIconURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderIconURL_Part" valueName="DefaultSearchProviderIconURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderEncodings_Policy" class="User" displayName="$(string.DefaultSearchProviderEncodings_Policy)" explainText="$(string.DefaultSearchProviderEncodings_Explain)" presentation="$(presentation.DefaultSearchProviderEncodings_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="DefaultSearchProviderEncodings_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderAlternateURLs_Policy" class="User" displayName="$(string.DefaultSearchProviderAlternateURLs_Policy)" explainText="$(string.DefaultSearchProviderAlternateURLs_Explain)" presentation="$(presentation.DefaultSearchProviderAlternateURLs_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="DefaultSearchProviderAlternateURLs_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderSearchTermsReplacementKey_Policy" class="User" displayName="$(string.DefaultSearchProviderSearchTermsReplacementKey_Policy)" explainText="$(string.DefaultSearchProviderSearchTermsReplacementKey_Explain)" presentation="$(presentation.DefaultSearchProviderSearchTermsReplacementKey_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderSearchTermsReplacementKey_Part" valueName="DefaultSearchProviderSearchTermsReplacementKey" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderImageURL_Policy" class="User" displayName="$(string.DefaultSearchProviderImageURL_Policy)" explainText="$(string.DefaultSearchProviderImageURL_Explain)" presentation="$(presentation.DefaultSearchProviderImageURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderImageURL_Part" valueName="DefaultSearchProviderImageURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderNewTabURL_Policy" class="User" displayName="$(string.DefaultSearchProviderNewTabURL_Policy)" explainText="$(string.DefaultSearchProviderNewTabURL_Explain)" presentation="$(presentation.DefaultSearchProviderNewTabURL_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderNewTabURL_Part" valueName="DefaultSearchProviderNewTabURL" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderSearchURLPostParams_Policy" class="User" displayName="$(string.DefaultSearchProviderSearchURLPostParams_Policy)" explainText="$(string.DefaultSearchProviderSearchURLPostParams_Explain)" presentation="$(presentation.DefaultSearchProviderSearchURLPostParams_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderSearchURLPostParams_Part" valueName="DefaultSearchProviderSearchURLPostParams" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderSuggestURLPostParams_Policy" class="User" displayName="$(string.DefaultSearchProviderSuggestURLPostParams_Policy)" explainText="$(string.DefaultSearchProviderSuggestURLPostParams_Explain)" presentation="$(presentation.DefaultSearchProviderSuggestURLPostParams_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderSuggestURLPostParams_Part" valueName="DefaultSearchProviderSuggestURLPostParams" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderInstantURLPostParams_Policy" class="User" displayName="$(string.DefaultSearchProviderInstantURLPostParams_Policy)" explainText="$(string.DefaultSearchProviderInstantURLPostParams_Explain)" presentation="$(presentation.DefaultSearchProviderInstantURLPostParams_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderInstantURLPostParams_Part" valueName="DefaultSearchProviderInstantURLPostParams" />
+      </elements>
+    </policy>
+    <policy name="DefaultSearchProviderImageURLPostParams_Policy" class="User" displayName="$(string.DefaultSearchProviderImageURLPostParams_Policy)" explainText="$(string.DefaultSearchProviderImageURLPostParams_Explain)" presentation="$(presentation.DefaultSearchProviderImageURLPostParams_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="DefaultSearchProvider_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="DefaultSearchProviderImageURLPostParams_Part" valueName="DefaultSearchProviderImageURLPostParams" />
+      </elements>
+    </policy>
+    <policy name="ExtensionInstallBlacklist_Policy" class="User" displayName="$(string.ExtensionInstallBlacklist_Policy)" explainText="$(string.ExtensionInstallBlacklist_Explain)" presentation="$(presentation.ExtensionInstallBlacklist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Extensions_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ExtensionInstallBlacklist_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ExtensionInstallWhitelist_Policy" class="User" displayName="$(string.ExtensionInstallWhitelist_Policy)" explainText="$(string.ExtensionInstallWhitelist_Explain)" presentation="$(presentation.ExtensionInstallWhitelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Extensions_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ExtensionInstallWhitelist_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ExtensionInstallForcelist_Policy" class="User" displayName="$(string.ExtensionInstallForcelist_Policy)" explainText="$(string.ExtensionInstallForcelist_Explain)" presentation="$(presentation.ExtensionInstallForcelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Extensions_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ExtensionInstallForcelist_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ExtensionInstallSources_Policy" class="User" displayName="$(string.ExtensionInstallSources_Policy)" explainText="$(string.ExtensionInstallSources_Explain)" presentation="$(presentation.ExtensionInstallSources_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Extensions_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ExtensionInstallSources_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="ExtensionAllowedTypes_Policy" class="User" displayName="$(string.ExtensionAllowedTypes_Policy)" explainText="$(string.ExtensionAllowedTypes_Explain)" presentation="$(presentation.ExtensionAllowedTypes_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Extensions_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="ExtensionAllowedTypes_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="HomepageLocation_Policy" class="User" displayName="$(string.HomepageLocation_Policy)" explainText="$(string.HomepageLocation_Explain)" presentation="$(presentation.HomepageLocation_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Homepage_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="HomepageLocation_Part" valueName="HomepageLocation" />
+      </elements>
+    </policy>
+    <policy name="HomepageIsNewTabPage_Policy" class="User" displayName="$(string.HomepageIsNewTabPage_Policy)" explainText="$(string.HomepageIsNewTabPage_Explain)" presentation="$(presentation.HomepageIsNewTabPage_Policy)" key="Software\Policies\OpenFin" valueName="HomepageIsNewTabPage">
+      <parentCategory ref="Homepage_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="SupervisedUserCreationEnabled_Policy" class="User" displayName="$(string.SupervisedUserCreationEnabled_Policy)" explainText="$(string.SupervisedUserCreationEnabled_Explain)" presentation="$(presentation.SupervisedUserCreationEnabled_Policy)" key="Software\Policies\OpenFin" valueName="SupervisedUserCreationEnabled">
+      <parentCategory ref="LocallyManagedUsers_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="NativeMessagingBlacklist_Policy" class="User" displayName="$(string.NativeMessagingBlacklist_Policy)" explainText="$(string.NativeMessagingBlacklist_Explain)" presentation="$(presentation.NativeMessagingBlacklist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="NativeMessaging_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="NativeMessagingBlacklist_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="NativeMessagingWhitelist_Policy" class="User" displayName="$(string.NativeMessagingWhitelist_Policy)" explainText="$(string.NativeMessagingWhitelist_Explain)" presentation="$(presentation.NativeMessagingWhitelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="NativeMessaging_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="NativeMessagingWhitelist_Part" key="$(string.unknown_0)" valuePrefix="" />
+      </elements>
+    </policy>
+    <policy name="NativeMessagingUserLevelHosts_Policy" class="User" displayName="$(string.NativeMessagingUserLevelHosts_Policy)" explainText="$(string.NativeMessagingUserLevelHosts_Explain)" presentation="$(presentation.NativeMessagingUserLevelHosts_Policy)" key="Software\Policies\OpenFin" valueName="NativeMessagingUserLevelHosts">
+      <parentCategory ref="NativeMessaging_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="PasswordManagerEnabled_Policy" class="User" displayName="$(string.PasswordManagerEnabled_Policy)" explainText="$(string.PasswordManagerEnabled_Explain)" presentation="$(presentation.PasswordManagerEnabled_Policy)" key="Software\Policies\OpenFin" valueName="PasswordManagerEnabled">
+      <parentCategory ref="PasswordManager_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="PasswordManagerAllowShowPasswords_Policy" class="User" displayName="$(string.PasswordManagerAllowShowPasswords_Policy)" explainText="$(string.PasswordManagerAllowShowPasswords_Explain)" presentation="$(presentation.PasswordManagerAllowShowPasswords_Policy)" key="Software\Policies\OpenFin" valueName="PasswordManagerAllowShowPasswords">
+      <parentCategory ref="PasswordManager_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AuthSchemes_Policy" class="User" displayName="$(string.AuthSchemes_Policy)" explainText="$(string.AuthSchemes_Explain)" presentation="$(presentation.AuthSchemes_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="AuthSchemes_Part" valueName="AuthSchemes" />
+      </elements>
+    </policy>
+    <policy name="DisableAuthNegotiateCnameLookup_Policy" class="User" displayName="$(string.DisableAuthNegotiateCnameLookup_Policy)" explainText="$(string.DisableAuthNegotiateCnameLookup_Explain)" presentation="$(presentation.DisableAuthNegotiateCnameLookup_Policy)" key="Software\Policies\OpenFin" valueName="DisableAuthNegotiateCnameLookup">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="EnableAuthNegotiatePort_Policy" class="User" displayName="$(string.EnableAuthNegotiatePort_Policy)" explainText="$(string.EnableAuthNegotiatePort_Explain)" presentation="$(presentation.EnableAuthNegotiatePort_Policy)" key="Software\Policies\OpenFin" valueName="EnableAuthNegotiatePort">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="AuthServerWhitelist_Policy" class="User" displayName="$(string.AuthServerWhitelist_Policy)" explainText="$(string.AuthServerWhitelist_Explain)" presentation="$(presentation.AuthServerWhitelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="AuthServerWhitelist_Part" valueName="AuthServerWhitelist" />
+      </elements>
+    </policy>
+    <policy name="AuthNegotiateDelegateWhitelist_Policy" class="User" displayName="$(string.AuthNegotiateDelegateWhitelist_Policy)" explainText="$(string.AuthNegotiateDelegateWhitelist_Explain)" presentation="$(presentation.AuthNegotiateDelegateWhitelist_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="AuthNegotiateDelegateWhitelist_Part" valueName="AuthNegotiateDelegateWhitelist" />
+      </elements>
+    </policy>
+    <policy name="AllowCrossOriginAuthPrompt_Policy" class="User" displayName="$(string.AllowCrossOriginAuthPrompt_Policy)" explainText="$(string.AllowCrossOriginAuthPrompt_Explain)" presentation="$(presentation.AllowCrossOriginAuthPrompt_Policy)" key="Software\Policies\OpenFin" valueName="AllowCrossOriginAuthPrompt">
+      <parentCategory ref="HTTPAuthentication_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <enabledValue>
+        <decimal value="1" />
+      </enabledValue>
+      <disabledValue>
+        <decimal value="0" />
+      </disabledValue>
+    </policy>
+    <policy name="ProxyMode_Policy" class="User" displayName="$(string.ProxyMode_Policy)" explainText="$(string.ProxyMode_Explain)" presentation="$(presentation.ProxyMode_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Proxy_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="ProxyMode_Part" valueName="ProxyMode">
+          <item displayName="$(string.ProxyDisabled_DropDown)">
+            <value>
+              <string>direct</string>
+            </value>
+          </item>
+          <item displayName="$(string.ProxyAutoDetect_DropDown)">
+            <value>
+              <string>auto_detect</string>
+            </value>
+          </item>
+          <item displayName="$(string.ProxyPacScript_DropDown)">
+            <value>
+              <string>pac_script</string>
+            </value>
+          </item>
+          <item displayName="$(string.ProxyFixedServers_DropDown)">
+            <value>
+              <string>fixed_servers</string>
+            </value>
+          </item>
+          <item displayName="$(string.ProxyUseSystem_DropDown)">
+            <value>
+              <string>system</string>
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="ProxyServer_Policy" class="User" displayName="$(string.ProxyServer_Policy)" explainText="$(string.ProxyServer_Explain)" presentation="$(presentation.ProxyServer_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Proxy_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="ProxyServer_Part" valueName="ProxyServer" />
+      </elements>
+    </policy>
+    <policy name="ProxyPacUrl_Policy" class="User" displayName="$(string.ProxyPacUrl_Policy)" explainText="$(string.ProxyPacUrl_Explain)" presentation="$(presentation.ProxyPacUrl_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Proxy_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="ProxyPacUrl_Part" valueName="ProxyPacUrl" />
+      </elements>
+    </policy>
+    <policy name="ProxyBypassList_Policy" class="User" displayName="$(string.ProxyBypassList_Policy)" explainText="$(string.ProxyBypassList_Explain)" presentation="$(presentation.ProxyBypassList_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="Proxy_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <text id="ProxyBypassList_Part" valueName="ProxyBypassList" />
+      </elements>
+    </policy>
+    <policy name="RestoreOnStartup_Policy" class="User" displayName="$(string.RestoreOnStartup_Policy)" explainText="$(string.RestoreOnStartup_Explain)" presentation="$(presentation.RestoreOnStartup_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RestoreOnStartupGroup_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <enum id="RestoreOnStartup_Part" valueName="RestoreOnStartup">
+          <item displayName="$(string.RestoreOnStartupIsNewTabPage_DropDown)">
+            <value>
+              <decimal value="5" />
+            </value>
+          </item>
+          <item displayName="$(string.RestoreOnStartupIsLastSession_DropDown)">
+            <value>
+              <decimal value="1" />
+            </value>
+          </item>
+          <item displayName="$(string.RestoreOnStartupIsURLs_DropDown)">
+            <value>
+              <decimal value="4" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+    <policy name="RestoreOnStartupURLs_Policy" class="User" displayName="$(string.RestoreOnStartupURLs_Policy)" explainText="$(string.RestoreOnStartupURLs_Explain)" presentation="$(presentation.RestoreOnStartupURLs_Policy)" key="Software\Policies\OpenFin">
+      <parentCategory ref="RestoreOnStartupGroup_Category" />
+      <supportedOn ref="SUPPORTED_WINXPSP2" />
+      <elements>
+        <list id="RestoreOnStartupURLs_Part" key="$(string.unknown_5)" valuePrefix="" />
+      </elements>
+    </policy>
+  </policies>
+</policyDefinitions>
