@@ -8,9 +8,10 @@ Group Policy Template (ADM file) for the OpenFin Runtime
 1. Download the file
 2. Start->Run->gpedit.msc
 3. Right click on Administrative Templates, Add/Remove Templates...
-4. Load the file and close
+4. Load openfin.adm.  For Runtime v26.102+, load openfin-v26.adm.
 5. The settings will appear under Administrative Templates->Classic Administrative Templates (ADM)
 
+When upgrading Runtime to v26.102+, please load openfin-v26.adm because some of policy key names have been deprecated, including AuthServerAllowlist and AuthNegotiateDelegateAllowlist.  If the deprecated keys are configured, please copy values to the new key names.  The existing polices will be stored under "openfin/Removed policies" in Group Policy.  Please do not remove deprecate keys if older versions of Runtime are still needed.
 
 ## License
 MIT
